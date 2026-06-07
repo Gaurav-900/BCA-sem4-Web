@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCA-64T-215 | Mathematics & Statistics — Study Portal</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle sidebar">☰</button>
+    <span class="course-badge">BCA-64T-215</span>
+    <h1 class="topbar-title">Mathematics &amp; Statistics</h1>
+  </div>
+  <div class="topbar-right">
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search topics…" autocomplete="off">
+      <div id="searchResults" class="search-dropdown"></div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+  </div>
+</header>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <nav class="sidebar-nav">
+    <a href="#home" class="nav-item active" data-section="home">🏠 Home</a>
+
+    <div class="nav-group">
+      <div class="nav-group-header" data-group="unit1">📐 Unit I — Sets, Relations &amp; Functions <span class="chevron">▸</span></div>
+      <div class="nav-group-body" id="group-unit1">
+        <a href="#u1-sets" class="nav-sub" data-section="u1-sets">1.1 Sets</a>
+        <a href="#u1-relations" class="nav-sub" data-section="u1-relations">1.2 Relations</a>
+        <a href="#u1-functions" class="nav-sub" data-section="u1-functions">1.3 Functions</a>
+        <a href="#u1-exam" class="nav-sub" data-section="u1-exam">📝 Unit I Exam Prep</a>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-header" data-group="unit2">🔢 Unit II — Logic, Matrices &amp; Determinants <span class="chevron">▸</span></div>
+      <div class="nav-group-body" id="group-unit2">
+        <a href="#u2-logic" class="nav-sub" data-section="u2-logic">2.1 Logic &amp; Proofs</a>
+        <a href="#u2-matrices" class="nav-sub" data-section="u2-matrices">2.2 Matrices</a>
+        <a href="#u2-determinants" class="nav-sub" data-section="u2-determinants">2.3 Determinants</a>
+        <a href="#u2-exam" class="nav-sub" data-section="u2-exam">📝 Unit II Exam Prep</a>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-header" data-group="unit3">📊 Unit III — Statistics <span class="chevron">▸</span></div>
+      <div class="nav-group-body" id="group-unit3">
+        <a href="#u3-data" class="nav-sub" data-section="u3-data">3.1 Data Collection &amp; Classification</a>
+        <a href="#u3-frequency" class="nav-sub" data-section="u3-frequency">3.2 Frequency Distribution</a>
+        <a href="#u3-central" class="nav-sub" data-section="u3-central">3.3 Measures of Central Tendency</a>
+        <a href="#u3-dispersion" class="nav-sub" data-section="u3-dispersion">3.4 Measures of Dispersion</a>
+        <a href="#u3-exam" class="nav-sub" data-section="u3-exam">📝 Unit III Exam Prep</a>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-header" data-group="unit4">📈 Unit IV — Correlation &amp; Regression <span class="chevron">▸</span></div>
+      <div class="nav-group-body" id="group-unit4">
+        <a href="#u4-correlation" class="nav-sub" data-section="u4-correlation">4.1 Correlation Analysis</a>
+        <a href="#u4-regression" class="nav-sub" data-section="u4-regression">4.2 Regression Analysis</a>
+        <a href="#u4-exam" class="nav-sub" data-section="u4-exam">📝 Unit IV Exam Prep</a>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-header" data-group="extras">📚 References <span class="chevron">▸</span></div>
+      <div class="nav-group-body" id="group-extras">
+        <a href="#formula-sheet" class="nav-sub" data-section="formula-sheet">📋 Formula Sheet</a>
+        <a href="#glossary" class="nav-sub" data-section="glossary">📖 Glossary</a>
+        <a href="#crash-revision" class="nav-sub" data-section="crash-revision">🚀 Crash Revision</a>
+      </div>
+    </div>
+  </nav>
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="main-content" id="mainContent">
+
+<!-- ===================== HOME ===================== -->
+<section id="home" class="content-section active">
+  <div class="hero-banner">
+    <div class="hero-text">
+      <p class="hero-tag">BCA — Semester VI</p>
+      <h2 class="hero-title">Mathematics &amp; Statistics</h2>
+      <p class="hero-sub">A complete, exam-ready study portal covering all four units of BCA-64T-215</p>
+    </div>
+    <div class="hero-graphic">
+      <svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+        <circle cx="110" cy="80" r="70" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.3"/>
+        <circle cx="110" cy="80" r="50" fill="none" stroke="var(--accent2)" stroke-width="1.5" opacity="0.4"/>
+        <text x="110" y="75" text-anchor="middle" font-size="28" fill="var(--accent)" font-weight="bold">∑</text>
+        <text x="110" y="100" text-anchor="middle" font-size="13" fill="var(--fg-muted)">∫ f(x) dx</text>
+        <line x1="40" y1="130" x2="180" y2="130" stroke="var(--accent2)" stroke-width="1" opacity="0.5"/>
+        <polyline points="50,125 70,110 90,115 110,90 130,100 150,80 170,85" fill="none" stroke="var(--accent)" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="unit-cards">
+    <div class="unit-card" onclick="navigate('u1-sets')">
+      <div class="unit-card-num">I</div>
+      <div>
+        <h3>Sets, Relations &amp; Functions</h3>
+        <p>Set theory, Venn diagrams, types of relations, functions &amp; bijections</p>
+      </div>
+    </div>
+    <div class="unit-card" onclick="navigate('u2-logic')">
+      <div class="unit-card-num">II</div>
+      <div>
+        <h3>Logic, Matrices &amp; Determinants</h3>
+        <p>Propositional logic, matrix operations, Cramer's rule</p>
+      </div>
+    </div>
+    <div class="unit-card" onclick="navigate('u3-data')">
+      <div class="unit-card-num">III</div>
+      <div>
+        <h3>Statistics</h3>
+        <p>Data collection, frequency distribution, mean, median, mode, SD</p>
+      </div>
+    </div>
+    <div class="unit-card" onclick="navigate('u4-correlation')">
+      <div class="unit-card-num">IV</div>
+      <div>
+        <h3>Correlation &amp; Regression</h3>
+        <p>Karl Pearson's coefficient, rank correlation, regression lines</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="quick-links-row">
+    <button class="ql-btn" onclick="navigate('formula-sheet')">📋 Formula Sheet</button>
+    <button class="ql-btn" onclick="navigate('glossary')">📖 Glossary</button>
+    <button class="ql-btn" onclick="navigate('crash-revision')">🚀 Crash Revision</button>
+  </div>
+</section>
+
+<!-- ===================== UNIT I — SETS ===================== -->
+<section id="u1-sets" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit I · Topic 1</span>
+    <h2>Sets</h2>
+  </div>
+
+  <div class="objectives-box">
+    <h3>🎯 Learning Objectives</h3>
+    <ul>
+      <li>Define a set and represent it in different ways</li>
+      <li>Identify and classify types of sets</li>
+      <li>Perform operations on sets (union, intersection, complement, difference)</li>
+      <li>Draw and interpret Venn diagrams</li>
+      <li>Apply the Principle of Inclusion–Exclusion</li>
+    </ul>
+  </div>
+
+  <h3 class="topic-h3">1.1 Definition of a Set</h3>
+  <div class="def-box">
+    <strong>Definition:</strong> A <em>set</em> is a well-defined collection of distinct objects, called <em>elements</em> or <em>members</em>. A set is usually denoted by capital letters A, B, C, … and its elements by lower-case letters.
+  </div>
+  <p><strong>Example:</strong> A = {1, 2, 3, 4, 5} ; B = {a, e, i, o, u} ; C = {x | x is a prime number less than 10} = {2, 3, 5, 7}</p>
+  <p>If element <em>a</em> belongs to set A, we write <strong>a ∈ A</strong>; if not, <strong>a ∉ A</strong>.</p>
+
+  <h3 class="topic-h3">1.2 Representation of Sets</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Method</th><th>Description</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Roster / Tabular</strong></td><td>List all elements inside braces</td><td>{1, 2, 3, 4}</td></tr>
+        <tr><td><strong>Set-Builder / Rule</strong></td><td>Define property of elements</td><td>{x | x ∈ ℕ, x ≤ 4}</td></tr>
+        <tr><td><strong>Descriptive</strong></td><td>Describe in words</td><td>"Set of first four natural numbers"</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="topic-h3">1.3 Types of Sets</h3>
+  <div class="cards-grid">
+    <div class="info-card">
+      <h4>Empty / Null Set (∅)</h4>
+      <p>A set with no elements. e.g., {x | x ∈ ℕ, x &lt; 0} = ∅</p>
+    </div>
+    <div class="info-card">
+      <h4>Singleton Set</h4>
+      <p>Exactly one element. e.g., {5}</p>
+    </div>
+    <div class="info-card">
+      <h4>Finite Set</h4>
+      <p>Countable number of elements. e.g., {1,2,3}</p>
+    </div>
+    <div class="info-card">
+      <h4>Infinite Set</h4>
+      <p>Elements continue without end. e.g., ℕ = {1,2,3,…}</p>
+    </div>
+    <div class="info-card">
+      <h4>Universal Set (U)</h4>
+      <p>The all-encompassing set for a given context</p>
+    </div>
+    <div class="info-card">
+      <h4>Equal Sets</h4>
+      <p>A = B iff every element of A is in B and vice versa</p>
+    </div>
+    <div class="info-card">
+      <h4>Equivalent Sets</h4>
+      <p>Same cardinality (number of elements)</p>
+    </div>
+    <div class="info-card">
+      <h4>Disjoint Sets</h4>
+      <p>A ∩ B = ∅ (no common elements)</p>
+    </div>
+  </div>
+
+  <h3 class="topic-h3">1.4 Subsets &amp; Power Set</h3>
+  <div class="def-box">
+    <strong>Subset:</strong> A ⊆ B if every element of A is also in B. A ⊂ B (proper subset) if A ⊆ B and A ≠ B.
+  </div>
+  <div class="def-box">
+    <strong>Power Set P(A):</strong> The set of ALL subsets of A. If |A| = n, then |P(A)| = 2<sup>n</sup>.
+  </div>
+  <p><strong>Example:</strong> A = {1, 2}  →  P(A) = {∅, {1}, {2}, {1,2}} → |P(A)| = 2² = 4</p>
+
+  <h3 class="topic-h3">1.5 Operations on Sets</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Union</span><span>A ∪ B = {x | x ∈ A <strong>or</strong> x ∈ B}</span></div>
+    <div class="formula-row"><span class="formula-label">Intersection</span><span>A ∩ B = {x | x ∈ A <strong>and</strong> x ∈ B}</span></div>
+    <div class="formula-row"><span class="formula-label">Difference</span><span>A − B = {x | x ∈ A <strong>and</strong> x ∉ B}</span></div>
+    <div class="formula-row"><span class="formula-label">Complement</span><span>A′ = Aᶜ = U − A = {x | x ∈ U, x ∉ A}</span></div>
+    <div class="formula-row"><span class="formula-label">Sym. Diff.</span><span>A △ B = (A−B) ∪ (B−A)</span></div>
+  </div>
+
+  <h3 class="topic-h3">1.6 Venn Diagrams</h3>
+  <p>Venn diagrams use overlapping circles inside a rectangle (universal set) to visualise set relationships.</p>
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" class="diagram-svg">
+      <rect x="5" y="5" width="390" height="190" rx="8" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+      <text x="370" y="20" text-anchor="end" font-size="12" fill="var(--fg-muted)">U</text>
+      <!-- A∪B -->
+      <circle cx="145" cy="100" r="65" fill="var(--accent)" opacity="0.18"/>
+      <circle cx="255" cy="100" r="65" fill="var(--accent2)" opacity="0.18"/>
+      <circle cx="145" cy="100" r="65" fill="none" stroke="var(--accent)" stroke-width="2"/>
+      <circle cx="255" cy="100" r="65" fill="none" stroke="var(--accent2)" stroke-width="2"/>
+      <text x="100" y="100" text-anchor="middle" font-size="18" fill="var(--accent)" font-weight="bold">A</text>
+      <text x="300" y="100" text-anchor="middle" font-size="18" fill="var(--accent2)" font-weight="bold">B</text>
+      <text x="200" y="100" text-anchor="middle" font-size="11" fill="var(--fg)" font-weight="bold">A∩B</text>
+      <text x="200" y="185" text-anchor="middle" font-size="11" fill="var(--fg-muted)">Venn Diagram — Union &amp; Intersection</text>
+    </svg>
+  </div>
+
+  <h3 class="topic-h3">1.7 Laws of Set Theory</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Law</th><th>Union Form</th><th>Intersection Form</th></tr></thead>
+      <tbody>
+        <tr><td>Idempotent</td><td>A ∪ A = A</td><td>A ∩ A = A</td></tr>
+        <tr><td>Identity</td><td>A ∪ ∅ = A</td><td>A ∩ U = A</td></tr>
+        <tr><td>Complement</td><td>A ∪ A′ = U</td><td>A ∩ A′ = ∅</td></tr>
+        <tr><td>Commutative</td><td>A ∪ B = B ∪ A</td><td>A ∩ B = B ∩ A</td></tr>
+        <tr><td>Associative</td><td>(A∪B)∪C = A∪(B∪C)</td><td>(A∩B)∩C = A∩(B∩C)</td></tr>
+        <tr><td>Distributive</td><td>A∪(B∩C)=(A∪B)∩(A∪C)</td><td>A∩(B∪C)=(A∩B)∪(A∩C)</td></tr>
+        <tr><td>De Morgan's</td><td>(A∪B)′ = A′∩B′</td><td>(A∩B)′ = A′∪B′</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="topic-h3">1.8 Principle of Inclusion–Exclusion</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">2 Sets</span><span>|A ∪ B| = |A| + |B| − |A ∩ B|</span></div>
+    <div class="formula-row"><span class="formula-label">3 Sets</span><span>|A∪B∪C| = |A|+|B|+|C| − |A∩B| − |B∩C| − |A∩C| + |A∩B∩C|</span></div>
+  </div>
+  <div class="example-box">
+    <strong>Example:</strong> In a class of 50, 30 study Maths, 25 study Stats, 10 study both. How many study at least one subject?<br>
+    |M ∪ S| = 30 + 25 − 10 = <strong>45</strong>
+  </div>
+</section>
+
+<!-- ===================== UNIT I — RELATIONS ===================== -->
+<section id="u1-relations" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit I · Topic 2</span>
+    <h2>Relations</h2>
+  </div>
+
+  <h3 class="topic-h3">2.1 Cartesian Product</h3>
+  <div class="def-box">
+    <strong>Definition:</strong> A × B = {(a, b) | a ∈ A, b ∈ B}. The Cartesian product is the set of all ordered pairs.
+  </div>
+  <p><strong>Example:</strong> A={1,2}, B={x,y} → A×B = {(1,x),(1,y),(2,x),(2,y)}</p>
+  <p>If |A|=m and |B|=n, then |A×B| = m×n.</p>
+
+  <h3 class="topic-h3">2.2 Definition of Relation</h3>
+  <div class="def-box">
+    <strong>Definition:</strong> A <em>relation</em> R from set A to set B is a subset of A×B. R ⊆ A×B. If (a,b) ∈ R, we write <strong>aRb</strong>.
+  </div>
+  <p>The <strong>domain</strong> of R = {a ∈ A | ∃ b ∈ B, (a,b) ∈ R} and the <strong>range</strong> of R = {b ∈ B | ∃ a ∈ A, (a,b) ∈ R}.</p>
+
+  <h3 class="topic-h3">2.3 Types of Relations</h3>
+  <div class="cards-grid">
+    <div class="info-card highlight-card">
+      <h4>Reflexive</h4>
+      <p>aRa for all a ∈ A<br><em>Every element is related to itself.</em></p>
+      <p class="example-inline">e.g., "is equal to" (a=a)</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Symmetric</h4>
+      <p>If aRb then bRa<br><em>Relation works both ways.</em></p>
+      <p class="example-inline">e.g., "is a sibling of"</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Anti-Symmetric</h4>
+      <p>If aRb and bRa then a=b<br><em>Equality is the only bidirectional pair.</em></p>
+      <p class="example-inline">e.g., "is less than or equal to"</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Transitive</h4>
+      <p>If aRb and bRc then aRc</p>
+      <p class="example-inline">e.g., "is an ancestor of"</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Equivalence</h4>
+      <p>Reflexive + Symmetric + Transitive</p>
+      <p class="example-inline">e.g., "is congruent to" (mod n)</p>
+    </div>
+  </div>
+
+  <div class="example-box">
+    <strong>Example:</strong> Let A = {1,2,3}, R = {(1,1),(2,2),(3,3),(1,2),(2,1)}.<br>
+    ✔ Reflexive (all (a,a) ∈ R) &nbsp; ✔ Symmetric ((1,2)&amp;(2,1) both present) &nbsp; ✗ Transitive (check: (2,1) &amp; (1,2) → (2,2) ✓, but (1,2)&amp;(2,1)→(1,1)✓ — actually transitive here) → This R is an <strong>equivalence relation</strong>.
+  </div>
+</section>
+
+<!-- ===================== UNIT I — FUNCTIONS ===================== -->
+<section id="u1-functions" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit I · Topic 3</span>
+    <h2>Functions</h2>
+  </div>
+
+  <h3 class="topic-h3">3.1 Definition</h3>
+  <div class="def-box">
+    <strong>Definition:</strong> A function f : A → B is a relation such that every element of A (domain) is associated with <em>exactly one</em> element of B (codomain). The set of actual outputs is the <em>range</em>.
+  </div>
+
+  <h3 class="topic-h3">3.2 Domain &amp; Range</h3>
+  <ul>
+    <li><strong>Domain:</strong> The set of all valid inputs (x values)</li>
+    <li><strong>Codomain:</strong> The target set B</li>
+    <li><strong>Range:</strong> {f(x) | x ∈ Domain} ⊆ Codomain</li>
+  </ul>
+  <div class="example-box">f(x) = √x &nbsp;→&nbsp; Domain = [0,∞), Range = [0,∞)</div>
+
+  <h3 class="topic-h3">3.3 Types of Functions</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Type</th><th>Condition</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><strong>One-to-One (Injective)</strong></td><td>f(a)=f(b) ⟹ a=b. No two inputs give same output.</td><td>f(x)=2x</td></tr>
+        <tr><td><strong>Onto (Surjective)</strong></td><td>Every element of codomain has a preimage. Range = Codomain.</td><td>f(x)=x³ on ℝ</td></tr>
+        <tr><td><strong>Bijective</strong></td><td>Both injective AND surjective.</td><td>f(x)=x+1</td></tr>
+        <tr><td><strong>Many-to-One</strong></td><td>Two or more inputs map to same output.</td><td>f(x)=x²</td></tr>
+        <tr><td><strong>Constant</strong></td><td>f(x)=c for all x</td><td>f(x)=5</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="topic-h3">3.4 Composite Functions</h3>
+  <div class="def-box">
+    <strong>Composite Function (fog):</strong> (f∘g)(x) = f(g(x)). Apply g first, then f.
+  </div>
+  <div class="example-box">
+    f(x) = x+2,&nbsp; g(x) = 3x<br>
+    (f∘g)(x) = f(g(x)) = f(3x) = 3x+2<br>
+    (g∘f)(x) = g(f(x)) = g(x+2) = 3(x+2) = 3x+6<br>
+    Note: f∘g ≠ g∘f (not commutative in general)
+  </div>
+
+  <h3 class="topic-h3">3.5 Inverse of a Function</h3>
+  <div class="def-box">
+    <strong>Inverse f⁻¹:</strong> If f is bijective, then f⁻¹ : B → A such that f⁻¹(f(x)) = x. To find f⁻¹: swap x and y, then solve for y.
+  </div>
+  <div class="example-box">
+    f(x) = 3x − 1<br>
+    Step 1: y = 3x − 1<br>
+    Step 2: x = 3y − 1 (swap)<br>
+    Step 3: y = (x+1)/3<br>
+    ∴ f⁻¹(x) = (x+1)/3
+  </div>
+</section>
+
+<!-- ===================== UNIT I EXAM ===================== -->
+<section id="u1-exam" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit I</span>
+    <h2>📝 Exam Preparation</h2>
+  </div>
+  <div class="exam-section">
+    <h3>2-Mark Questions</h3>
+    <ol>
+      <li>Define a set. Give two examples.</li>
+      <li>What is a power set? If |A|=3, find |P(A)|.</li>
+      <li>State De Morgan's laws.</li>
+      <li>Define reflexive and symmetric relations.</li>
+      <li>What is a bijective function?</li>
+      <li>Define domain and range of a function.</li>
+    </ol>
+    <h3>5-Mark Questions</h3>
+    <ol>
+      <li>Explain types of sets with examples.</li>
+      <li>State and prove De Morgan's laws using Venn diagrams.</li>
+      <li>Define the Principle of Inclusion–Exclusion. Solve: In a group of 70 students, 40 play cricket, 30 play football, and 10 play both. Find how many play at least one sport.</li>
+      <li>Differentiate between injective, surjective, and bijective functions with examples.</li>
+      <li>Find the inverse of f(x) = (2x−3)/5.</li>
+    </ol>
+    <h3>10-Mark Questions</h3>
+    <ol>
+      <li>Define a relation. Explain reflexive, symmetric, anti-symmetric, transitive, and equivalence relations with examples.</li>
+      <li>Explain all operations on sets. Illustrate each with a Venn diagram and an example.</li>
+      <li>Define composite functions. If f(x)=x²+1 and g(x)=2x−3, find (f∘g)(x) and (g∘f)(x). Are they equal?</li>
+    </ol>
+    <h3>🔑 Key Points</h3>
+    <ul class="key-points">
+      <li>Power set of A with n elements has 2ⁿ subsets</li>
+      <li>De Morgan's: (A∪B)′=A′∩B′ and (A∩B)′=A′∪B′</li>
+      <li>Equivalence relation = Reflexive + Symmetric + Transitive</li>
+      <li>Only bijective functions have an inverse</li>
+      <li>f∘g ≠ g∘f in general</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== UNIT II — LOGIC ===================== -->
+<section id="u2-logic" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit II · Topic 1</span>
+    <h2>Logic &amp; Proofs</h2>
+  </div>
+
+  <div class="objectives-box">
+    <h3>🎯 Learning Objectives</h3>
+    <ul>
+      <li>Understand propositions and compound propositions</li>
+      <li>Apply logical connectives: AND, OR, NOT, implication, biconditional</li>
+      <li>Identify tautologies and contradictions</li>
+      <li>Apply De Morgan's laws in logic</li>
+    </ul>
+  </div>
+
+  <h3 class="topic-h3">1.1 Proposition</h3>
+  <div class="def-box">
+    <strong>Proposition (Statement):</strong> A declarative sentence that is either TRUE (T) or FALSE (F), but not both.
+  </div>
+  <div class="cards-grid">
+    <div class="info-card"><h4>Examples (Propositions)</h4><ul><li>"5 is a prime number" → T</li><li>"2+2=5" → F</li></ul></div>
+    <div class="info-card"><h4>Non-Propositions</h4><ul><li>"What time is it?" (question)</li><li>"Close the door." (command)</li></ul></div>
+  </div>
+
+  <h3 class="topic-h3">1.2 Logical Connectives</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Connective</th><th>Symbol</th><th>Name</th><th>True when</th></tr></thead>
+      <tbody>
+        <tr><td>AND</td><td>∧ (p∧q)</td><td>Conjunction</td><td>Both p and q are True</td></tr>
+        <tr><td>OR</td><td>∨ (p∨q)</td><td>Disjunction</td><td>At least one is True</td></tr>
+        <tr><td>NOT</td><td>¬p</td><td>Negation</td><td>p is False</td></tr>
+        <tr><td>IMPLIES</td><td>→ (p→q)</td><td>Conditional</td><td>p is False, OR q is True</td></tr>
+        <tr><td>IFF</td><td>↔ (p↔q)</td><td>Biconditional</td><td>p and q have same truth value</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="topic-h3">1.3 Truth Tables</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>p</th><th>q</th><th>¬p</th><th>p∧q</th><th>p∨q</th><th>p→q</th><th>p↔q</th></tr></thead>
+      <tbody>
+        <tr><td>T</td><td>T</td><td>F</td><td>T</td><td>T</td><td>T</td><td>T</td></tr>
+        <tr><td>T</td><td>F</td><td>F</td><td>F</td><td>T</td><td>F</td><td>F</td></tr>
+        <tr><td>F</td><td>T</td><td>T</td><td>F</td><td>T</td><td>T</td><td>F</td></tr>
+        <tr><td>F</td><td>F</td><td>T</td><td>F</td><td>F</td><td>T</td><td>T</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="topic-h3">1.4 Tautology &amp; Contradiction</h3>
+  <div class="cards-grid">
+    <div class="info-card highlight-card">
+      <h4>Tautology</h4>
+      <p>A compound proposition that is <strong>always TRUE</strong>, regardless of the truth values of its components.</p>
+      <p class="example-inline">Example: p ∨ ¬p (always T)</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Contradiction (Fallacy)</h4>
+      <p>A compound proposition that is <strong>always FALSE</strong>.</p>
+      <p class="example-inline">Example: p ∧ ¬p (always F)</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Contingency</h4>
+      <p>Neither tautology nor contradiction — truth value depends on components.</p>
+    </div>
+  </div>
+
+  <h3 class="topic-h3">1.5 De Morgan's Laws (Logic)</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Law 1</span><span>¬(p ∧ q) ≡ ¬p ∨ ¬q</span></div>
+    <div class="formula-row"><span class="formula-label">Law 2</span><span>¬(p ∨ q) ≡ ¬p ∧ ¬q</span></div>
+  </div>
+  <div class="example-box">
+    <strong>Verify ¬(p ∧ q) ≡ ¬p ∨ ¬q:</strong> Construct truth table — both columns are identical, confirming the equivalence.
+  </div>
+</section>
+
+<!-- ===================== UNIT II — MATRICES ===================== -->
+<section id="u2-matrices" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit II · Topic 2</span>
+    <h2>Matrices</h2>
+  </div>
+
+  <h3 class="topic-h3">2.1 Definition</h3>
+  <div class="def-box">
+    <strong>Matrix:</strong> A rectangular array of numbers arranged in rows and columns, enclosed in brackets. A matrix with m rows and n columns is called an <em>m × n matrix</em>. Element at row i, column j is denoted a<sub>ij</sub>.
+  </div>
+
+  <h3 class="topic-h3">2.2 Types of Matrices</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Type</th><th>Description</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>Row Matrix</td><td>Single row (1×n)</td><td>[1, 2, 3]</td></tr>
+        <tr><td>Column Matrix</td><td>Single column (n×1)</td><td>[1; 2; 3]</td></tr>
+        <tr><td>Square Matrix</td><td>Rows = Columns (n×n)</td><td>[[1,2],[3,4]]</td></tr>
+        <tr><td>Zero/Null Matrix</td><td>All elements = 0</td><td>[[0,0],[0,0]]</td></tr>
+        <tr><td>Identity Matrix I</td><td>Diagonal=1, rest=0</td><td>[[1,0],[0,1]]</td></tr>
+        <tr><td>Diagonal Matrix</td><td>Non-diagonal elements=0</td><td>[[3,0],[0,5]]</td></tr>
+        <tr><td>Scalar Matrix</td><td>Diagonal elements all equal</td><td>[[k,0],[0,k]]</td></tr>
+        <tr><td>Symmetric</td><td>A = Aᵀ (aᵢⱼ=aⱼᵢ)</td><td>[[1,2],[2,3]]</td></tr>
+        <tr><td>Skew-Symmetric</td><td>A = −Aᵀ (aᵢⱼ=−aⱼᵢ, diagonal=0)</td><td>[[0,2],[−2,0]]</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="topic-h3">2.3 Matrix Operations</h3>
+
+  <h4>Addition &amp; Subtraction</h4>
+  <p>Only possible for matrices of the <strong>same order</strong>. Add/subtract corresponding elements.</p>
+  <div class="formula-box">
+    <div class="formula-row"><span>(A+B)<sub>ij</sub> = a<sub>ij</sub> + b<sub>ij</sub></span></div>
+  </div>
+
+  <h4>Scalar Multiplication</h4>
+  <p>Multiply every element by the scalar k.</p>
+  <div class="formula-box">
+    <div class="formula-row"><span>(kA)<sub>ij</sub> = k·a<sub>ij</sub></span></div>
+  </div>
+
+  <h4>Matrix Multiplication</h4>
+  <div class="def-box">
+    <strong>Condition:</strong> A(m×p) × B(p×n) = C(m×n). Number of columns in A = Number of rows in B.
+  </div>
+  <div class="formula-box">
+    <div class="formula-row"><span>C<sub>ij</sub> = Σ<sub>k=1 to p</sub> a<sub>ik</sub> · b<sub>kj</sub></span></div>
+  </div>
+  <div class="example-box">
+    <strong>Example:</strong> A = [[1,2],[3,4]], B = [[5,6],[7,8]]<br>
+    C₁₁ = 1×5+2×7 = 5+14 = 19<br>
+    C₁₂ = 1×6+2×8 = 6+16 = 22<br>
+    C₂₁ = 3×5+4×7 = 15+28 = 43<br>
+    C₂₂ = 3×6+4×8 = 18+32 = 50<br>
+    AB = [[19,22],[43,50]]
+  </div>
+  <div class="def-box">
+    <strong>Non-commutativity:</strong> In general, AB ≠ BA. Matrix multiplication is NOT commutative.
+  </div>
+
+  <h4>Transpose of a Matrix</h4>
+  <div class="def-box">
+    <strong>Transpose Aᵀ:</strong> Obtained by interchanging rows and columns. (Aᵀ)<sub>ij</sub> = a<sub>ji</sub>.
+  </div>
+  <div class="example-box">
+    A = [[1,2,3],[4,5,6]] (2×3)<br>
+    Aᵀ = [[1,4],[2,5],[3,6]] (3×2)
+  </div>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Properties of Transpose</span></div>
+    <div class="formula-row"><span>(Aᵀ)ᵀ = A</span></div>
+    <div class="formula-row"><span>(A+B)ᵀ = Aᵀ + Bᵀ</span></div>
+    <div class="formula-row"><span>(AB)ᵀ = BᵀAᵀ</span></div>
+    <div class="formula-row"><span>(kA)ᵀ = kAᵀ</span></div>
+  </div>
+</section>
+
+<!-- ===================== UNIT II — DETERMINANTS ===================== -->
+<section id="u2-determinants" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit II · Topic 3</span>
+    <h2>Determinants</h2>
+  </div>
+
+  <h3 class="topic-h3">3.1 Determinant of a Square Matrix</h3>
+  <div class="def-box">
+    <strong>Definition:</strong> The determinant is a scalar value computed from a square matrix. Denoted det(A) or |A|.
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">1×1</span><span>|A| = [a] → det = a</span></div>
+    <div class="formula-row"><span class="formula-label">2×2</span><span>|A| = |a b; c d| = ad − bc</span></div>
+    <div class="formula-row"><span class="formula-label">3×3</span><span>Expansion along Row 1:<br>|A| = a₁₁(a₂₂a₃₃−a₂₃a₃₂) − a₁₂(a₂₁a₃₃−a₂₃a₃₁) + a₁₃(a₂₁a₃₂−a₂₂a₃₁)</span></div>
+  </div>
+
+  <div class="example-box">
+    <strong>Example — 3×3:</strong><br>
+    A = [[2,1,3],[0,4,1],[5,2,0]]<br>
+    |A| = 2(4×0−1×2) − 1(0×0−1×5) + 3(0×2−4×5)<br>
+    = 2(0−2) − 1(0−5) + 3(0−20)<br>
+    = 2(−2) − 1(−5) + 3(−20)<br>
+    = −4 + 5 − 60 = <strong>−59</strong>
+  </div>
+
+  <h3 class="topic-h3">3.2 Minors &amp; Cofactors</h3>
+  <div class="def-box">
+    <strong>Minor M<sub>ij</sub>:</strong> The determinant of the submatrix obtained by deleting row i and column j.
+  </div>
+  <div class="def-box">
+    <strong>Cofactor C<sub>ij</sub>:</strong> C<sub>ij</sub> = (−1)<sup>i+j</sup> M<sub>ij</sub>. The sign is determined by the checkerboard pattern:
+  </div>
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" class="diagram-svg">
+      <text x="100" y="20" text-anchor="middle" font-size="13" fill="var(--fg-muted)">Sign Pattern (−1)ⁱ⁺ʲ</text>
+      <text x="50" y="60" text-anchor="middle" font-size="22" fill="var(--accent)">+</text>
+      <text x="100" y="60" text-anchor="middle" font-size="22" fill="var(--accent2)">−</text>
+      <text x="150" y="60" text-anchor="middle" font-size="22" fill="var(--accent)">+</text>
+      <text x="50" y="95" text-anchor="middle" font-size="22" fill="var(--accent2)">−</text>
+      <text x="100" y="95" text-anchor="middle" font-size="22" fill="var(--accent)">+</text>
+      <text x="150" y="95" text-anchor="middle" font-size="22" fill="var(--accent2)">−</text>
+      <text x="50" y="130" text-anchor="middle" font-size="22" fill="var(--accent)">+</text>
+      <text x="100" y="130" text-anchor="middle" font-size="22" fill="var(--accent2)">−</text>
+      <text x="150" y="130" text-anchor="middle" font-size="22" fill="var(--accent)">+</text>
+    </svg>
+  </div>
+
+  <h3 class="topic-h3">3.3 Properties of Determinants</h3>
+  <ol>
+    <li>det(Aᵀ) = det(A)</li>
+    <li>If two rows (or columns) are identical, det(A) = 0</li>
+    <li>Interchanging two rows changes the sign of the determinant</li>
+    <li>Multiplying a row by k multiplies the determinant by k</li>
+    <li>If all elements of a row are 0, det(A) = 0</li>
+    <li>det(AB) = det(A) × det(B)</li>
+    <li>Adding a multiple of one row to another does not change det(A)</li>
+  </ol>
+
+  <h3 class="topic-h3">3.4 Adjoint &amp; Inverse of a Matrix</h3>
+  <div class="def-box">
+    <strong>Adjoint (adj A):</strong> The transpose of the cofactor matrix of A.
+  </div>
+  <div class="def-box">
+    <strong>Inverse A⁻¹:</strong> A⁻¹ = (1/det(A)) × adj(A), provided det(A) ≠ 0.
+  </div>
+  <div class="example-box">
+    <strong>Example:</strong> A = [[1,2],[3,4]]<br>
+    det(A) = 1×4−2×3 = 4−6 = −2<br>
+    Cofactor matrix = [[4,−3],[−2,1]]<br>
+    adj(A) = [[4,−2],[−3,1]] (transpose of cofactor matrix)<br>
+    A⁻¹ = (1/−2)[[4,−2],[−3,1]] = [[−2,1],[1.5,−0.5]]
+  </div>
+
+  <h3 class="topic-h3">3.5 Area of a Triangle</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Formula</span><span>Area = (1/2) |x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂)|</span></div>
+    <div class="formula-row"><span class="formula-label">Determinant Form</span><span>Area = (1/2) |det([[x₁,y₁,1],[x₂,y₂,1],[x₃,y₃,1]])|</span></div>
+  </div>
+  <div class="example-box">
+    Vertices: (1,1),(2,3),(4,2)<br>
+    Area = (1/2)|1(3−2)+2(2−1)+4(1−3)| = (1/2)|1+2−8| = (1/2)(5) = <strong>2.5 sq. units</strong>
+  </div>
+
+  <h3 class="topic-h3">3.6 Cramer's Rule</h3>
+  <div class="def-box">
+    <strong>Cramer's Rule:</strong> Solves a system of linear equations using determinants. For Ax = b:
+  </div>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">x₁ = D₁/D,</span><span>x₂ = D₂/D,</span><span>&nbsp;x₃ = D₃/D</span></div>
+    <div class="formula-row"><span>Where D=det(A), Dᵢ = det obtained by replacing column i with column b</span></div>
+  </div>
+  <div class="example-box">
+    <strong>Solve:</strong> 2x+y=5, x+3y=10<br>
+    D = |2,1;1,3| = 6−1 = 5<br>
+    D₁ = |5,1;10,3| = 15−10 = 5 → x = 5/5 = <strong>1</strong><br>
+    D₂ = |2,5;1,10| = 20−5 = 15 → y = 15/5 = <strong>3</strong>
+  </div>
+</section>
+
+<!-- ===================== UNIT II EXAM ===================== -->
+<section id="u2-exam" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit II</span>
+    <h2>📝 Exam Preparation</h2>
+  </div>
+  <div class="exam-section">
+    <h3>2-Mark Questions</h3>
+    <ol>
+      <li>What is a proposition? Give two examples.</li>
+      <li>Define tautology and contradiction with examples.</li>
+      <li>What is a square matrix? Give an example of identity matrix.</li>
+      <li>State De Morgan's law in logic.</li>
+      <li>What is the transpose of a matrix?</li>
+      <li>State the condition for matrix multiplication.</li>
+    </ol>
+    <h3>5-Mark Questions</h3>
+    <ol>
+      <li>Construct a truth table for (p ∨ q) → (¬p ∧ q) and determine if it is a tautology.</li>
+      <li>If A=[[1,2],[3,4]] and B=[[5,6],[7,8]], find AB and BA. Show AB≠BA.</li>
+      <li>Evaluate the determinant of [[3,1,2],[0,5,1],[2,3,4]].</li>
+      <li>Find the adjoint and inverse of [[2,3],[1,4]].</li>
+    </ol>
+    <h3>10-Mark Questions</h3>
+    <ol>
+      <li>Explain all types of matrices with examples. Discuss properties of matrix multiplication.</li>
+      <li>Using Cramer's rule, solve: x+y+z=6, 2x−y+z=3, x+2y−z=2.</li>
+      <li>Explain the properties of determinants with examples.</li>
+    </ol>
+    <h3>🔑 Key Points</h3>
+    <ul class="key-points">
+      <li>Matrix multiplication: (m×p)(p×n) = (m×n)</li>
+      <li>Matrix multiplication is NOT commutative</li>
+      <li>(AB)ᵀ = BᵀAᵀ (reverse order)</li>
+      <li>A⁻¹ = adj(A)/det(A)</li>
+      <li>In Cramer's Rule: if D=0, system has no unique solution</li>
+      <li>p→q is False only when p is T and q is F</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== UNIT III — DATA ===================== -->
+<section id="u3-data" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit III · Topic 1</span>
+    <h2>Data Collection &amp; Classification</h2>
+  </div>
+
+  <div class="objectives-box">
+    <h3>🎯 Learning Objectives</h3>
+    <ul>
+      <li>Understand the meaning and importance of statistics</li>
+      <li>Identify methods of data collection</li>
+      <li>Distinguish between primary and secondary data</li>
+      <li>Classify data into types</li>
+    </ul>
+  </div>
+
+  <h3 class="topic-h3">1.1 Statistics — Introduction</h3>
+  <div class="def-box">
+    <strong>Statistics:</strong> The science of collecting, organising, presenting, analysing, and interpreting numerical data to draw conclusions and make decisions.
+  </div>
+  <p><strong>Uses:</strong> Business decision-making, government planning, scientific research, economics, medical studies.</p>
+
+  <h3 class="topic-h3">1.2 Data Collection Methods</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Method</th><th>Description</th><th>Advantages</th><th>Disadvantages</th></tr></thead>
+      <tbody>
+        <tr><td>Direct Personal Interview</td><td>Interviewer collects data face-to-face</td><td>Accurate, flexible</td><td>Expensive, time-consuming</td></tr>
+        <tr><td>Indirect Oral Interview</td><td>Interview of witnesses/third parties</td><td>Useful when direct is difficult</td><td>May be biased</td></tr>
+        <tr><td>Questionnaire (Mailed)</td><td>Printed form sent by post</td><td>Wide coverage, cheap</td><td>Low response rate</td></tr>
+        <tr><td>Schedules</td><td>Enumerators fill data directly</td><td>Reliable</td><td>Costly if large scale</td></tr>
+        <tr><td>Secondary Sources</td><td>Already collected data (govt reports, journals)</td><td>Quick, cheap</td><td>May not suit current need</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="topic-h3">1.3 Classification of Data</h3>
+  <div class="cards-grid">
+    <div class="info-card">
+      <h4>Qualitative (Attribute)</h4>
+      <p>Non-numerical characteristics. e.g., Gender, Colour, Religion</p>
+    </div>
+    <div class="info-card">
+      <h4>Quantitative (Variable)</h4>
+      <p>Numerical data. e.g., Height, Weight, Marks</p>
+    </div>
+    <div class="info-card">
+      <h4>Discrete</h4>
+      <p>Countable values. e.g., Number of students</p>
+    </div>
+    <div class="info-card">
+      <h4>Continuous</h4>
+      <p>Any value in a range. e.g., Temperature, Time</p>
+    </div>
+    <div class="info-card">
+      <h4>Primary Data</h4>
+      <p>Collected first-hand by the researcher</p>
+    </div>
+    <div class="info-card">
+      <h4>Secondary Data</h4>
+      <p>Already collected and available from published sources</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== UNIT III — FREQUENCY ===================== -->
+<section id="u3-frequency" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit III · Topic 2</span>
+    <h2>Frequency Distribution &amp; Graphical Representation</h2>
+  </div>
+
+  <h3 class="topic-h3">2.1 Frequency Distribution</h3>
+  <div class="def-box">
+    <strong>Frequency Distribution:</strong> A tabular arrangement showing how often each value or class of values occurs in a dataset.
+  </div>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td>Class Interval</td><td>Range grouping data (e.g., 10–20)</td></tr>
+        <tr><td>Frequency (f)</td><td>Number of observations in a class</td></tr>
+        <tr><td>Class Limit</td><td>Upper &amp; lower boundaries</td></tr>
+        <tr><td>Class Boundary</td><td>Actual values used (no gaps)</td></tr>
+        <tr><td>Class Width / Size (h)</td><td>Upper Limit − Lower Limit</td></tr>
+        <tr><td>Mid-Point (x)</td><td>(Upper+Lower)/2</td></tr>
+        <tr><td>Cumulative Frequency</td><td>Running total of frequencies</td></tr>
+        <tr><td>Relative Frequency</td><td>f/n (proportion)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="topic-h3">2.2 Graphical Representations</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Graph Type</th><th>Description</th><th>Use</th></tr></thead>
+      <tbody>
+        <tr><td>Histogram</td><td>Bars touching each other; x-axis = class boundaries, y-axis = frequency</td><td>Continuous data distribution</td></tr>
+        <tr><td>Frequency Polygon</td><td>Line connecting midpoints of histogram bars</td><td>Comparing distributions</td></tr>
+        <tr><td>Ogive (Cumulative)</td><td>Curve of cumulative frequency</td><td>Finding median, quartiles</td></tr>
+        <tr><td>Bar Chart</td><td>Bars with gaps; for discrete/qualitative data</td><td>Comparisons</td></tr>
+        <tr><td>Pie Chart</td><td>Circle divided into sectors; angle=(f/n)×360°</td><td>Proportion/percentage</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg" class="diagram-svg">
+      <text x="190" y="18" text-anchor="middle" font-size="13" fill="var(--fg)" font-weight="bold">Histogram Example</text>
+      <!-- axes -->
+      <line x1="40" y1="170" x2="360" y2="170" stroke="var(--border)" stroke-width="1.5"/>
+      <line x1="40" y1="170" x2="40" y2="20" stroke="var(--border)" stroke-width="1.5"/>
+      <!-- bars -->
+      <rect x="50" y="120" width="50" height="50" fill="var(--accent)" opacity="0.7"/>
+      <rect x="110" y="80" width="50" height="90" fill="var(--accent)" opacity="0.7"/>
+      <rect x="170" y="50" width="50" height="120" fill="var(--accent)" opacity="0.85"/>
+      <rect x="230" y="90" width="50" height="80" fill="var(--accent)" opacity="0.7"/>
+      <rect x="290" y="130" width="50" height="40" fill="var(--accent)" opacity="0.7"/>
+      <!-- labels -->
+      <text x="75" y="185" text-anchor="middle" font-size="10" fill="var(--fg-muted)">10-20</text>
+      <text x="135" y="185" text-anchor="middle" font-size="10" fill="var(--fg-muted)">20-30</text>
+      <text x="195" y="185" text-anchor="middle" font-size="10" fill="var(--fg-muted)">30-40</text>
+      <text x="255" y="185" text-anchor="middle" font-size="10" fill="var(--fg-muted)">40-50</text>
+      <text x="315" y="185" text-anchor="middle" font-size="10" fill="var(--fg-muted)">50-60</text>
+      <!-- freq labels -->
+      <text x="30" y="125" text-anchor="end" font-size="10" fill="var(--fg-muted)">5</text>
+      <text x="30" y="85" text-anchor="end" font-size="10" fill="var(--fg-muted)">9</text>
+      <text x="30" y="55" text-anchor="end" font-size="10" fill="var(--fg-muted)">12</text>
+      <!-- freq polygon -->
+      <polyline points="75,120 135,80 195,50 255,90 315,130" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-dasharray="4,3"/>
+      <circle cx="75" cy="120" r="4" fill="var(--accent2)"/>
+      <circle cx="135" cy="80" r="4" fill="var(--accent2)"/>
+      <circle cx="195" cy="50" r="4" fill="var(--accent2)"/>
+      <circle cx="255" cy="90" r="4" fill="var(--accent2)"/>
+      <circle cx="315" cy="130" r="4" fill="var(--accent2)"/>
+      <text x="280" y="60" font-size="10" fill="var(--accent2)">— Freq Polygon</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ===================== UNIT III — CENTRAL TENDENCY ===================== -->
+<section id="u3-central" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit III · Topic 3</span>
+    <h2>Measures of Central Tendency</h2>
+  </div>
+
+  <div class="def-box">
+    <strong>Central Tendency:</strong> A single value that represents the "centre" or "typical" value of a dataset. The three main measures are Mean, Median, and Mode.
+  </div>
+
+  <h3 class="topic-h3">3.1 Mean (Arithmetic Mean)</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Ungrouped</span><span>x̄ = (Σxᵢ)/n</span></div>
+    <div class="formula-row"><span class="formula-label">Grouped (Direct)</span><span>x̄ = Σ(f·x) / Σf</span></div>
+    <div class="formula-row"><span class="formula-label">Assumed Mean</span><span>x̄ = A + Σ(f·d)/Σf &nbsp; where d = x−A</span></div>
+    <div class="formula-row"><span class="formula-label">Step Deviation</span><span>x̄ = A + (Σf·u/Σf)×h &nbsp; where u=(x−A)/h</span></div>
+  </div>
+  <div class="example-box">
+    <strong>Ungrouped:</strong> Data: 10, 15, 20, 25, 30 → x̄ = (10+15+20+25+30)/5 = 100/5 = <strong>20</strong><br><br>
+    <strong>Grouped:</strong><br>
+    <table style="border-collapse:collapse;margin-top:6px;font-size:13px">
+      <tr><th style="border:1px solid var(--border);padding:4px 8px">Class</th><th style="border:1px solid var(--border);padding:4px 8px">f</th><th style="border:1px solid var(--border);padding:4px 8px">x (mid)</th><th style="border:1px solid var(--border);padding:4px 8px">f·x</th></tr>
+      <tr><td style="border:1px solid var(--border);padding:4px 8px">10–20</td><td style="border:1px solid var(--border);padding:4px 8px">5</td><td style="border:1px solid var(--border);padding:4px 8px">15</td><td style="border:1px solid var(--border);padding:4px 8px">75</td></tr>
+      <tr><td style="border:1px solid var(--border);padding:4px 8px">20–30</td><td style="border:1px solid var(--border);padding:4px 8px">8</td><td style="border:1px solid var(--border);padding:4px 8px">25</td><td style="border:1px solid var(--border);padding:4px 8px">200</td></tr>
+      <tr><td style="border:1px solid var(--border);padding:4px 8px">30–40</td><td style="border:1px solid var(--border);padding:4px 8px">7</td><td style="border:1px solid var(--border);padding:4px 8px">35</td><td style="border:1px solid var(--border);padding:4px 8px">245</td></tr>
+      <tr><td style="border:1px solid var(--border);padding:4px 8px"><strong>Total</strong></td><td style="border:1px solid var(--border);padding:4px 8px"><strong>20</strong></td><td style="border:1px solid var(--border);padding:4px 8px"></td><td style="border:1px solid var(--border);padding:4px 8px"><strong>520</strong></td></tr>
+    </table>
+    x̄ = 520/20 = <strong>26</strong>
+  </div>
+
+  <h3 class="topic-h3">3.2 Median</h3>
+  <div class="def-box">
+    <strong>Median:</strong> The middle value of an ordered dataset. It divides the distribution into two equal halves.
+  </div>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Ungrouped (odd n)</span><span>Median = value at position (n+1)/2</span></div>
+    <div class="formula-row"><span class="formula-label">Ungrouped (even n)</span><span>Median = avg of n/2 and (n/2+1) positions</span></div>
+    <div class="formula-row"><span class="formula-label">Grouped</span><span>Median = L + [(n/2 − cf)/f] × h</span></div>
+  </div>
+  <p>Where: L = lower class boundary of median class, cf = cumulative frequency before median class, f = frequency of median class, h = class width.</p>
+  <div class="example-box">
+    <strong>Grouped Median:</strong> n=50, median class is 30–40, L=30, cf=20, f=15, h=10<br>
+    Median = 30 + [(25−20)/15]×10 = 30 + (5/15)×10 = 30 + 3.33 = <strong>33.33</strong>
+  </div>
+
+  <h3 class="topic-h3">3.3 Mode</h3>
+  <div class="def-box">
+    <strong>Mode:</strong> The value that appears most frequently in a dataset.
+  </div>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Grouped</span><span>Mode = L + [f₁−f₀ / 2f₁−f₀−f₂] × h</span></div>
+  </div>
+  <p>Where: L = lower limit of modal class, f₁ = frequency of modal class, f₀ = frequency of pre-modal class, f₂ = frequency of post-modal class, h = class width.</p>
+
+  <h3 class="topic-h3">3.4 Relationship: Mean, Median &amp; Mode</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Empirical Formula</span><span>Mode ≈ 3 × Median − 2 × Mean</span></div>
+    <div class="formula-row"><span class="formula-label">Symmetric</span><span>Mean = Median = Mode</span></div>
+  </div>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Measure</th><th>Best For</th><th>Affected by Extreme Values?</th><th>Can be calculated for grouped?</th></tr></thead>
+      <tbody>
+        <tr><td>Mean</td><td>Quantitative data</td><td>Yes (most affected)</td><td>Yes</td></tr>
+        <tr><td>Median</td><td>Skewed data</td><td>No</td><td>Yes</td></tr>
+        <tr><td>Mode</td><td>Most common value</td><td>No</td><td>Yes</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== UNIT III — DISPERSION ===================== -->
+<section id="u3-dispersion" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit III · Topic 4</span>
+    <h2>Measures of Dispersion</h2>
+  </div>
+
+  <div class="def-box">
+    <strong>Dispersion:</strong> The spread or variability of data around the central value. A smaller dispersion means data is concentrated near the mean; larger means data is spread out.
+  </div>
+
+  <h3 class="topic-h3">4.1 Range</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Range</span><span>R = Maximum Value − Minimum Value</span></div>
+    <div class="formula-row"><span class="formula-label">Coeff. of Range</span><span>= (Max−Min)/(Max+Min)</span></div>
+  </div>
+
+  <h3 class="topic-h3">4.2 Mean Deviation (MD)</h3>
+  <div class="def-box">
+    <strong>Mean Deviation:</strong> Average of absolute deviations from the mean (or median/mode).
+  </div>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Ungrouped</span><span>MD = Σ|xᵢ − x̄| / n</span></div>
+    <div class="formula-row"><span class="formula-label">Grouped</span><span>MD = Σf|x − x̄| / Σf</span></div>
+    <div class="formula-row"><span class="formula-label">Coefficient of MD</span><span>= MD / Mean</span></div>
+  </div>
+  <div class="example-box">
+    <strong>Example (Ungrouped):</strong> Data: 4, 6, 8, 10, 12. Mean=8<br>
+    |4−8|+|6−8|+|8−8|+|10−8|+|12−8| = 4+2+0+2+4 = 12<br>
+    MD = 12/5 = <strong>2.4</strong>
+  </div>
+
+  <h3 class="topic-h3">4.3 Standard Deviation (SD)</h3>
+  <div class="def-box">
+    <strong>Standard Deviation (σ):</strong> The positive square root of the variance. Most widely used measure of dispersion.
+  </div>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Ungrouped (Direct)</span><span>σ = √[Σ(xᵢ−x̄)²/n]</span></div>
+    <div class="formula-row"><span class="formula-label">Ungrouped (Alternate)</span><span>σ = √[(Σxᵢ²/n) − x̄²]</span></div>
+    <div class="formula-row"><span class="formula-label">Grouped (Direct)</span><span>σ = √[Σf(x−x̄)²/Σf]</span></div>
+    <div class="formula-row"><span class="formula-label">Grouped (Step Dev.)</span><span>σ = h × √[Σfu²/Σf − (Σfu/Σf)²]</span></div>
+    <div class="formula-row"><span class="formula-label">Sample SD</span><span>s = √[Σ(xᵢ−x̄)²/(n−1)]</span></div>
+  </div>
+  <div class="example-box">
+    <strong>Example:</strong> Data: 2, 4, 4, 4, 5, 5, 7, 9 (n=8), x̄=5<br>
+    Σ(x−x̄)² = 9+1+1+1+0+0+4+16 = 32<br>
+    σ = √(32/8) = √4 = <strong>2</strong>
+  </div>
+
+  <h3 class="topic-h3">4.4 Variance</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Variance</span><span>σ² = Σ(xᵢ−x̄)²/n &nbsp; [= (SD)²]</span></div>
+    <div class="formula-row"><span class="formula-label">Coefficient of Variation</span><span>CV = (σ/x̄) × 100%</span></div>
+  </div>
+  <p>CV is used to compare variability of two datasets with different units or means. <strong>Lower CV = more consistent data.</strong></p>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Measure</th><th>Formula</th><th>Merits</th><th>Demerits</th></tr></thead>
+      <tbody>
+        <tr><td>Range</td><td>Max − Min</td><td>Simple, quick</td><td>Ignores all middle values</td></tr>
+        <tr><td>Mean Deviation</td><td>Σ|x−x̄|/n</td><td>Uses all values</td><td>Absolute values are algebraically inconvenient</td></tr>
+        <tr><td>Standard Deviation</td><td>√[Σ(x−x̄)²/n]</td><td>Mathematically rigorous, widely used</td><td>Affected by extreme values</td></tr>
+        <tr><td>Variance</td><td>σ²</td><td>Additive property</td><td>Units are squared (less intuitive)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== UNIT III EXAM ===================== -->
+<section id="u3-exam" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit III</span>
+    <h2>📝 Exam Preparation</h2>
+  </div>
+  <div class="exam-section">
+    <h3>2-Mark Questions</h3>
+    <ol>
+      <li>Define statistics and give its uses.</li>
+      <li>Distinguish between primary and secondary data.</li>
+      <li>What is a frequency distribution? Define class width.</li>
+      <li>Define Mean Deviation.</li>
+      <li>What is coefficient of variation?</li>
+    </ol>
+    <h3>5-Mark Questions</h3>
+    <ol>
+      <li>Find the mean, median, and mode for: 5,10,15,20,25,25,30.</li>
+      <li>For grouped data with classes 0-10,10-20,20-30,30-40 and frequencies 4,7,9,5, compute the Mean using direct method.</li>
+      <li>Compute the standard deviation: 6,8,10,12,14. Also state its coefficient of variation.</li>
+    </ol>
+    <h3>10-Mark Questions</h3>
+    <ol>
+      <li>Explain all methods of data collection with their merits and demerits.</li>
+      <li>Define mean, median, and mode. Calculate all three for a given grouped frequency distribution and verify the empirical relationship.</li>
+      <li>Explain measures of dispersion. Compute Range, Mean Deviation, Standard Deviation and Variance for the dataset: 3,6,9,12,15.</li>
+    </ol>
+    <h3>🔑 Key Points</h3>
+    <ul class="key-points">
+      <li>Mean uses all data; Median is position-based; Mode is most frequent</li>
+      <li>Mode = 3 Median − 2 Mean (empirical formula)</li>
+      <li>SD = √Variance; Variance = (SD)²</li>
+      <li>CV = (σ/x̄)×100 for comparison across distributions</li>
+      <li>Histogram: no gaps between bars; Bar chart: gaps present</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== UNIT IV — CORRELATION ===================== -->
+<section id="u4-correlation" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit IV · Topic 1</span>
+    <h2>Correlation Analysis</h2>
+  </div>
+
+  <div class="objectives-box">
+    <h3>🎯 Learning Objectives</h3>
+    <ul>
+      <li>Define correlation and understand its types</li>
+      <li>Apply Karl Pearson's Coefficient of Correlation</li>
+      <li>Calculate Spearman's Rank Correlation Coefficient</li>
+      <li>Interpret the degree of correlation</li>
+    </ul>
+  </div>
+
+  <h3 class="topic-h3">1.1 Correlation — Definition</h3>
+  <div class="def-box">
+    <strong>Correlation:</strong> A statistical technique that measures the degree and direction of the linear relationship between two variables X and Y.
+  </div>
+  <p>If two variables tend to change together, they are said to be correlated.</p>
+
+  <h3 class="topic-h3">1.2 Types of Correlation</h3>
+  <div class="cards-grid">
+    <div class="info-card highlight-card">
+      <h4>Positive Correlation</h4>
+      <p>Both variables move in the <strong>same direction</strong>. As X ↑, Y ↑.</p>
+      <p class="example-inline">e.g., Height and Weight</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Negative Correlation</h4>
+      <p>Variables move in <strong>opposite directions</strong>. As X ↑, Y ↓.</p>
+      <p class="example-inline">e.g., Price and Demand</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Zero Correlation</h4>
+      <p>No linear relationship between the variables.</p>
+      <p class="example-inline">e.g., Shoe size and IQ</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Perfect Positive (r=+1)</h4>
+      <p>All points lie on a straight line with positive slope.</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Perfect Negative (r=−1)</h4>
+      <p>All points lie on a straight line with negative slope.</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Linear vs Non-linear</h4>
+      <p>Linear: points near a straight line. Non-linear: points follow a curve.</p>
+    </div>
+  </div>
+
+  <h3 class="topic-h3">1.3 Methods of Studying Correlation</h3>
+  <ol>
+    <li><strong>Scatter Diagram</strong> — Plot (X,Y) pairs; observe pattern visually</li>
+    <li><strong>Karl Pearson's Coefficient (r)</strong> — Quantitative measure for linear data</li>
+    <li><strong>Spearman's Rank Correlation (ρ)</strong> — For ordinal/ranked data</li>
+    <li><strong>Concurrent Deviation Method</strong> — Quick approximate method</li>
+  </ol>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 380 180" xmlns="http://www.w3.org/2000/svg" class="diagram-svg">
+      <text x="90" y="15" text-anchor="middle" font-size="11" fill="var(--accent)" font-weight="bold">Positive Corr.</text>
+      <text x="190" y="15" text-anchor="middle" font-size="11" fill="var(--accent2)" font-weight="bold">Negative Corr.</text>
+      <text x="310" y="15" text-anchor="middle" font-size="11" fill="var(--fg-muted)" font-weight="bold">No Correlation</text>
+      <!-- axes 1 -->
+      <line x1="30" y1="160" x2="160" y2="160" stroke="var(--border)" stroke-width="1"/>
+      <line x1="30" y1="160" x2="30" y2="25" stroke="var(--border)" stroke-width="1"/>
+      <!-- scatter 1 positive -->
+      <circle cx="45" cy="145" r="3" fill="var(--accent)"/>
+      <circle cx="60" cy="130" r="3" fill="var(--accent)"/>
+      <circle cx="75" cy="115" r="3" fill="var(--accent)"/>
+      <circle cx="90" cy="100" r="3" fill="var(--accent)"/>
+      <circle cx="110" cy="80" r="3" fill="var(--accent)"/>
+      <circle cx="130" cy="60" r="3" fill="var(--accent)"/>
+      <circle cx="145" cy="40" r="3" fill="var(--accent)"/>
+      <!-- axes 2 -->
+      <line x1="150" y1="160" x2="240" y2="160" stroke="var(--border)" stroke-width="1"/>
+      <line x1="150" y1="160" x2="150" y2="25" stroke="var(--border)" stroke-width="1"/>
+      <!-- scatter 2 negative -->
+      <circle cx="160" cy="40" r="3" fill="var(--accent2)"/>
+      <circle cx="172" cy="55" r="3" fill="var(--accent2)"/>
+      <circle cx="184" cy="80" r="3" fill="var(--accent2)"/>
+      <circle cx="196" cy="100" r="3" fill="var(--accent2)"/>
+      <circle cx="210" cy="120" r="3" fill="var(--accent2)"/>
+      <circle cx="228" cy="145" r="3" fill="var(--accent2)"/>
+      <!-- axes 3 -->
+      <line x1="255" y1="160" x2="370" y2="160" stroke="var(--border)" stroke-width="1"/>
+      <line x1="255" y1="160" x2="255" y2="25" stroke="var(--border)" stroke-width="1"/>
+      <!-- scatter 3 random -->
+      <circle cx="265" cy="60" r="3" fill="var(--fg-muted)"/>
+      <circle cx="285" cy="140" r="3" fill="var(--fg-muted)"/>
+      <circle cx="300" cy="80" r="3" fill="var(--fg-muted)"/>
+      <circle cx="315" cy="130" r="3" fill="var(--fg-muted)"/>
+      <circle cx="330" cy="50" r="3" fill="var(--fg-muted)"/>
+      <circle cx="350" cy="110" r="3" fill="var(--fg-muted)"/>
+      <circle cx="365" cy="70" r="3" fill="var(--fg-muted)"/>
+    </svg>
+  </div>
+
+  <h3 class="topic-h3">1.4 Karl Pearson's Coefficient of Correlation</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Direct</span><span>r = Σ(x−x̄)(y−ȳ) / √[Σ(x−x̄)² · Σ(y−ȳ)²]</span></div>
+    <div class="formula-row"><span class="formula-label">Alternate</span><span>r = [nΣxy − ΣxΣy] / √{[nΣx²−(Σx)²][nΣy²−(Σy)²]}</span></div>
+    <div class="formula-row"><span class="formula-label">Range</span><span>−1 ≤ r ≤ +1</span></div>
+  </div>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Value of r</th><th>Interpretation</th></tr></thead>
+      <tbody>
+        <tr><td>r = +1</td><td>Perfect positive correlation</td></tr>
+        <tr><td>0.75 ≤ r &lt; 1</td><td>High positive correlation</td></tr>
+        <tr><td>0.5 ≤ r &lt; 0.75</td><td>Moderate positive correlation</td></tr>
+        <tr><td>0 &lt; r &lt; 0.5</td><td>Low positive correlation</td></tr>
+        <tr><td>r = 0</td><td>No linear correlation</td></tr>
+        <tr><td>−0.5 &lt; r &lt; 0</td><td>Low negative correlation</td></tr>
+        <tr><td>−0.75 &lt; r ≤ −0.5</td><td>Moderate negative correlation</td></tr>
+        <tr><td>−1 &lt; r ≤ −0.75</td><td>High negative correlation</td></tr>
+        <tr><td>r = −1</td><td>Perfect negative correlation</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="example-box">
+    <strong>Example:</strong> n=5, Σx=15, Σy=25, Σx²=55, Σy²=135, Σxy=80<br>
+    r = [5×80 − 15×25] / √{[5×55−225][5×135−625]}<br>
+    = [400 − 375] / √{[275−225][675−625]}<br>
+    = 25 / √{50×50} = 25/50 = <strong>0.5</strong> (Moderate positive)
+  </div>
+
+  <h3 class="topic-h3">1.5 Spearman's Rank Correlation Coefficient</h3>
+  <div class="def-box">
+    <strong>Spearman's ρ (rho):</strong> Used when data is given in ranks or when the distribution is not normal. Suitable for ordinal data.
+  </div>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Formula</span><span>ρ = 1 − [6ΣD²] / [n(n²−1)]</span></div>
+    <div class="formula-row"><span>D = Rank of X − Rank of Y (difference in ranks)</span></div>
+  </div>
+  <div class="example-box">
+    <strong>Example:</strong> n=5, ranks given for X and Y:<br>
+    D values: 1,−1,0,2,−2 → D²: 1,1,0,4,4 → ΣD²=10<br>
+    ρ = 1 − [6×10]/[5×24] = 1 − 60/120 = 1 − 0.5 = <strong>0.5</strong>
+  </div>
+  <div class="def-box">
+    <strong>Tied Ranks:</strong> When two items share the same rank, assign average rank. Add correction factor: T = (t³−t)/12 per tie group, where t = number of tied items.
+  </div>
+</section>
+
+<!-- ===================== UNIT IV — REGRESSION ===================== -->
+<section id="u4-regression" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit IV · Topic 2</span>
+    <h2>Regression Analysis</h2>
+  </div>
+
+  <h3 class="topic-h3">2.1 Regression — Definition</h3>
+  <div class="def-box">
+    <strong>Regression:</strong> A statistical method used to establish the relationship between a dependent variable (Y) and one or more independent variables (X), for the purpose of prediction and estimation.
+  </div>
+
+  <h3 class="topic-h3">2.2 Uses of Regression Analysis</h3>
+  <ul>
+    <li>Predicting future values of Y given X</li>
+    <li>Identifying the strength and nature of the relationship</li>
+    <li>Estimating the impact of one variable on another</li>
+    <li>Useful in economics, business forecasting, agriculture, science</li>
+  </ul>
+
+  <h3 class="topic-h3">2.3 Correlation vs Regression</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Aspect</th><th>Correlation</th><th>Regression</th></tr></thead>
+      <tbody>
+        <tr><td>Purpose</td><td>Measures degree of relationship</td><td>Predicts value of one variable</td></tr>
+        <tr><td>Direction</td><td>Symmetric (X and Y are interchangeable)</td><td>Asymmetric (X is predictor, Y is response)</td></tr>
+        <tr><td>Nature</td><td>Describes strength and direction</td><td>Describes nature of relationship (equation)</td></tr>
+        <tr><td>Coefficient</td><td>r (dimensionless, −1 to +1)</td><td>b (slope; has units)</td></tr>
+        <tr><td>Lines</td><td>Only one scatter plot</td><td>Two regression lines (one for X on Y, one for Y on X)</td></tr>
+        <tr><td>Causation</td><td>Does NOT imply causation</td><td>May suggest causal direction</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="topic-h3">2.4 Regression Lines</h3>
+  <p>There are <strong>two</strong> regression lines:</p>
+  <div class="cards-grid">
+    <div class="info-card highlight-card">
+      <h4>Line of Y on X</h4>
+      <p>Used to predict Y when X is given.</p>
+      <p><strong>Equation:</strong> Y − ȳ = b<sub>yx</sub>(X − x̄)</p>
+      <p><strong>b<sub>yx</sub></strong> = r × (σ<sub>y</sub>/σ<sub>x</sub>)</p>
+    </div>
+    <div class="info-card highlight-card">
+      <h4>Line of X on Y</h4>
+      <p>Used to predict X when Y is given.</p>
+      <p><strong>Equation:</strong> X − x̄ = b<sub>xy</sub>(Y − ȳ)</p>
+      <p><strong>b<sub>xy</sub></strong> = r × (σ<sub>x</sub>/σ<sub>y</sub>)</p>
+    </div>
+  </div>
+
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">b<sub>yx</sub> (Direct)</span><span>b<sub>yx</sub> = [nΣxy − ΣxΣy] / [nΣx² − (Σx)²]</span></div>
+    <div class="formula-row"><span class="formula-label">b<sub>xy</sub> (Direct)</span><span>b<sub>xy</sub> = [nΣxy − ΣxΣy] / [nΣy² − (Σy)²]</span></div>
+    <div class="formula-row"><span class="formula-label">Relationship</span><span>r² = b<sub>yx</sub> × b<sub>xy</sub> &nbsp;∴&nbsp; r = ±√(b<sub>yx</sub> × b<sub>xy</sub>)</span></div>
+  </div>
+
+  <div class="example-box">
+    <strong>Example:</strong> n=5, x̄=3, ȳ=4, σ<sub>x</sub>=2, σ<sub>y</sub>=3, r=0.8<br><br>
+    b<sub>yx</sub> = 0.8 × (3/2) = <strong>1.2</strong><br>
+    Line of Y on X: Y − 4 = 1.2(X − 3) → <strong>Y = 1.2X + 0.4</strong><br><br>
+    b<sub>xy</sub> = 0.8 × (2/3) = <strong>0.533</strong><br>
+    Line of X on Y: X − 3 = 0.533(Y − 4) → <strong>X = 0.533Y + 0.868</strong><br><br>
+    Verify: r = ±√(1.2 × 0.533) = ±√0.64 = ±0.8 ✓
+  </div>
+
+  <h3 class="topic-h3">2.5 Properties of Regression Lines</h3>
+  <ol>
+    <li>Both regression lines pass through the point (x̄, ȳ) — the mean point.</li>
+    <li>The angle between the two lines depends on r. When r=±1, lines coincide. When r=0, lines are perpendicular.</li>
+    <li>The correlation coefficient r is the geometric mean of the two regression coefficients: r = ±√(b<sub>yx</sub>·b<sub>xy</sub>)</li>
+    <li>b<sub>yx</sub> and b<sub>xy</sub> always have the same sign as r.</li>
+    <li>If both regression coefficients are greater than 1 in absolute value, this is impossible. At least one must be ≤ 1.</li>
+  </ol>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 380 220" xmlns="http://www.w3.org/2000/svg" class="diagram-svg">
+      <text x="190" y="18" text-anchor="middle" font-size="13" fill="var(--fg)" font-weight="bold">Two Regression Lines</text>
+      <!-- axes -->
+      <line x1="50" y1="195" x2="360" y2="195" stroke="var(--border)" stroke-width="1.5"/>
+      <line x1="50" y1="195" x2="50" y2="25" stroke="var(--border)" stroke-width="1.5"/>
+      <text x="365" y="198" font-size="12" fill="var(--fg-muted)">X</text>
+      <text x="52" y="22" font-size="12" fill="var(--fg-muted)">Y</text>
+      <!-- scatter points -->
+      <circle cx="80" cy="170" r="4" fill="var(--fg-muted)" opacity="0.5"/>
+      <circle cx="110" cy="155" r="4" fill="var(--fg-muted)" opacity="0.5"/>
+      <circle cx="140" cy="135" r="4" fill="var(--fg-muted)" opacity="0.5"/>
+      <circle cx="185" cy="115" r="4" fill="var(--fg-muted)" opacity="0.5"/>
+      <circle cx="220" cy="95" r="4" fill="var(--fg-muted)" opacity="0.5"/>
+      <circle cx="260" cy="75" r="4" fill="var(--fg-muted)" opacity="0.5"/>
+      <circle cx="310" cy="55" r="4" fill="var(--fg-muted)" opacity="0.5"/>
+      <!-- Line Y on X -->
+      <line x1="60" y1="185" x2="350" y2="45" stroke="var(--accent)" stroke-width="2"/>
+      <text x="355" y="42" font-size="10" fill="var(--accent)">Y on X</text>
+      <!-- Line X on Y -->
+      <line x1="60" y1="190" x2="340" y2="50" stroke="var(--accent2)" stroke-width="2" stroke-dasharray="6,3"/>
+      <text x="345" y="48" font-size="10" fill="var(--accent2)">X on Y</text>
+      <!-- mean point -->
+      <circle cx="200" cy="110" r="6" fill="none" stroke="var(--fg)" stroke-width="2"/>
+      <text x="210" y="107" font-size="10" fill="var(--fg)">(x̄,ȳ)</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ===================== UNIT IV EXAM ===================== -->
+<section id="u4-exam" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Unit IV</span>
+    <h2>📝 Exam Preparation</h2>
+  </div>
+  <div class="exam-section">
+    <h3>2-Mark Questions</h3>
+    <ol>
+      <li>Define correlation. Give one example each of positive and negative correlation.</li>
+      <li>What does r=0 signify?</li>
+      <li>State Spearman's rank correlation formula.</li>
+      <li>Define regression. What are the two regression lines?</li>
+      <li>Write the relationship between r, b<sub>yx</sub>, and b<sub>xy</sub>.</li>
+    </ol>
+    <h3>5-Mark Questions</h3>
+    <ol>
+      <li>Calculate Karl Pearson's r for: X: 1,2,3,4,5 and Y: 2,4,5,4,5.</li>
+      <li>From n=6, ΣD²=14, compute Spearman's rank correlation.</li>
+      <li>Explain scatter diagrams as a method of studying correlation.</li>
+      <li>Differentiate between correlation and regression.</li>
+    </ol>
+    <h3>10-Mark Questions</h3>
+    <ol>
+      <li>Define correlation and explain its types. Calculate Karl Pearson's coefficient for a given dataset and interpret the result.</li>
+      <li>Explain regression lines. If r=0.6, x̄=10, ȳ=15, σ<sub>x</sub>=2, σ<sub>y</sub>=3, find both regression equations and estimate Y when X=12.</li>
+      <li>Derive the regression equation of Y on X from the principle of least squares and explain its properties.</li>
+    </ol>
+    <h3>🔑 Key Points</h3>
+    <ul class="key-points">
+      <li>r always lies between −1 and +1</li>
+      <li>Both regression lines pass through (x̄, ȳ)</li>
+      <li>r = ±√(b<sub>yx</sub> · b<sub>xy</sub>)</li>
+      <li>b<sub>yx</sub> = r·σ<sub>y</sub>/σ<sub>x</sub> ; b<sub>xy</sub> = r·σ<sub>x</sub>/σ<sub>y</sub></li>
+      <li>Spearman's ρ = 1 − 6ΣD²/n(n²−1)</li>
+      <li>When r=0, regression lines are perpendicular</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== FORMULA SHEET ===================== -->
+<section id="formula-sheet" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Reference</span>
+    <h2>📋 Complete Formula Sheet</h2>
+  </div>
+
+  <h3 class="topic-h3">Unit I — Sets &amp; Functions</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Power Set</span><span>|P(A)| = 2ⁿ where n = |A|</span></div>
+    <div class="formula-row"><span class="formula-label">Inclusion–Exclusion (2)</span><span>|A∪B| = |A|+|B|−|A∩B|</span></div>
+    <div class="formula-row"><span class="formula-label">Inclusion–Exclusion (3)</span><span>|A∪B∪C| = |A|+|B|+|C|−|A∩B|−|B∩C|−|A∩C|+|A∩B∩C|</span></div>
+    <div class="formula-row"><span class="formula-label">De Morgan</span><span>(A∪B)′=A′∩B′ ; (A∩B)′=A′∪B′</span></div>
+    <div class="formula-row"><span class="formula-label">Cartesian Product</span><span>|A×B| = |A|×|B|</span></div>
+  </div>
+
+  <h3 class="topic-h3">Unit II — Matrices &amp; Determinants</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">2×2 Determinant</span><span>|a b; c d| = ad − bc</span></div>
+    <div class="formula-row"><span class="formula-label">Cofactor</span><span>Cᵢⱼ = (−1)ⁱ⁺ʲ Mᵢⱼ</span></div>
+    <div class="formula-row"><span class="formula-label">Inverse</span><span>A⁻¹ = adj(A)/det(A)</span></div>
+    <div class="formula-row"><span class="formula-label">Cramer's Rule</span><span>x = D₁/D, y = D₂/D, z = D₃/D</span></div>
+    <div class="formula-row"><span class="formula-label">Area of Triangle</span><span>½|x₁(y₂−y₃)+x₂(y₃−y₁)+x₃(y₁−y₂)|</span></div>
+    <div class="formula-row"><span class="formula-label">Transpose</span><span>(AB)ᵀ = BᵀAᵀ</span></div>
+  </div>
+
+  <h3 class="topic-h3">Unit III — Statistics</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Mean (Grouped)</span><span>x̄ = Σfx/Σf</span></div>
+    <div class="formula-row"><span class="formula-label">Median (Grouped)</span><span>L + [(n/2−cf)/f] × h</span></div>
+    <div class="formula-row"><span class="formula-label">Mode (Grouped)</span><span>L + [(f₁−f₀)/(2f₁−f₀−f₂)] × h</span></div>
+    <div class="formula-row"><span class="formula-label">Empirical</span><span>Mode = 3 Median − 2 Mean</span></div>
+    <div class="formula-row"><span class="formula-label">MD</span><span>Σ|x−x̄|/n or Σf|x−x̄|/Σf</span></div>
+    <div class="formula-row"><span class="formula-label">SD (σ)</span><span>√[Σ(x−x̄)²/n] = √[Σx²/n − x̄²]</span></div>
+    <div class="formula-row"><span class="formula-label">Variance</span><span>σ² = Σ(x−x̄)²/n</span></div>
+    <div class="formula-row"><span class="formula-label">CV</span><span>(σ/x̄) × 100</span></div>
+    <div class="formula-row"><span class="formula-label">Pie Chart Angle</span><span>(f/n) × 360°</span></div>
+  </div>
+
+  <h3 class="topic-h3">Unit IV — Correlation &amp; Regression</h3>
+  <div class="formula-box">
+    <div class="formula-row"><span class="formula-label">Karl Pearson's r</span><span>r = [nΣxy−ΣxΣy] / √{[nΣx²−(Σx)²][nΣy²−(Σy)²]}</span></div>
+    <div class="formula-row"><span class="formula-label">Spearman's ρ</span><span>ρ = 1 − 6ΣD²/[n(n²−1)]</span></div>
+    <div class="formula-row"><span class="formula-label">b<sub>yx</sub></span><span>r × σ<sub>y</sub>/σ<sub>x</sub> = [nΣxy−ΣxΣy]/[nΣx²−(Σx)²]</span></div>
+    <div class="formula-row"><span class="formula-label">b<sub>xy</sub></span><span>r × σ<sub>x</sub>/σ<sub>y</sub> = [nΣxy−ΣxΣy]/[nΣy²−(Σy)²]</span></div>
+    <div class="formula-row"><span class="formula-label">Y on X Line</span><span>Y − ȳ = b<sub>yx</sub>(X − x̄)</span></div>
+    <div class="formula-row"><span class="formula-label">X on Y Line</span><span>X − x̄ = b<sub>xy</sub>(Y − ȳ)</span></div>
+    <div class="formula-row"><span class="formula-label">r &amp; b relation</span><span>r = ±√(b<sub>yx</sub> × b<sub>xy</sub>)</span></div>
+  </div>
+</section>
+
+<!-- ===================== GLOSSARY ===================== -->
+<section id="glossary" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Reference</span>
+    <h2>📖 Glossary of Terms</h2>
+  </div>
+  <div class="glossary-grid">
+    <div class="glossary-item"><span class="gterm">Set</span><span class="gdef">A well-defined collection of distinct objects</span></div>
+    <div class="glossary-item"><span class="gterm">Subset</span><span class="gdef">A set whose every element belongs to another set</span></div>
+    <div class="glossary-item"><span class="gterm">Power Set</span><span class="gdef">Set of all subsets of a given set; |P(A)|=2ⁿ</span></div>
+    <div class="glossary-item"><span class="gterm">Universal Set (U)</span><span class="gdef">All-encompassing set for the current context</span></div>
+    <div class="glossary-item"><span class="gterm">Complement (A′)</span><span class="gdef">All elements of U not in A</span></div>
+    <div class="glossary-item"><span class="gterm">Venn Diagram</span><span class="gdef">Diagram using circles to represent set relationships</span></div>
+    <div class="glossary-item"><span class="gterm">Relation</span><span class="gdef">A subset of the Cartesian product A×B</span></div>
+    <div class="glossary-item"><span class="gterm">Equivalence Relation</span><span class="gdef">A relation that is reflexive, symmetric, and transitive</span></div>
+    <div class="glossary-item"><span class="gterm">Function</span><span class="gdef">Each element of domain maps to exactly one element of codomain</span></div>
+    <div class="glossary-item"><span class="gterm">Bijection</span><span class="gdef">Function that is both injective and surjective</span></div>
+    <div class="glossary-item"><span class="gterm">Proposition</span><span class="gdef">Declarative sentence that is either true or false</span></div>
+    <div class="glossary-item"><span class="gterm">Tautology</span><span class="gdef">Compound statement always true regardless of components</span></div>
+    <div class="glossary-item"><span class="gterm">Contradiction</span><span class="gdef">Compound statement always false</span></div>
+    <div class="glossary-item"><span class="gterm">Matrix</span><span class="gdef">Rectangular array of numbers arranged in rows and columns</span></div>
+    <div class="glossary-item"><span class="gterm">Determinant</span><span class="gdef">Scalar value derived from a square matrix</span></div>
+    <div class="glossary-item"><span class="gterm">Adjoint</span><span class="gdef">Transpose of the cofactor matrix</span></div>
+    <div class="glossary-item"><span class="gterm">Singular Matrix</span><span class="gdef">Matrix whose determinant = 0; has no inverse</span></div>
+    <div class="glossary-item"><span class="gterm">Cramer's Rule</span><span class="gdef">Method to solve linear equations using determinants</span></div>
+    <div class="glossary-item"><span class="gterm">Mean (x̄)</span><span class="gdef">Sum of values divided by number of values</span></div>
+    <div class="glossary-item"><span class="gterm">Median</span><span class="gdef">Middle value when data is arranged in order</span></div>
+    <div class="glossary-item"><span class="gterm">Mode</span><span class="gdef">Most frequently occurring value</span></div>
+    <div class="glossary-item"><span class="gterm">Variance (σ²)</span><span class="gdef">Average of squared deviations from the mean</span></div>
+    <div class="glossary-item"><span class="gterm">Standard Deviation</span><span class="gdef">Square root of variance; measure of spread</span></div>
+    <div class="glossary-item"><span class="gterm">Correlation (r)</span><span class="gdef">Measure of strength and direction of linear relationship</span></div>
+    <div class="glossary-item"><span class="gterm">Regression</span><span class="gdef">Statistical method for predicting value of a variable</span></div>
+    <div class="glossary-item"><span class="gterm">Regression Coefficient (b)</span><span class="gdef">Slope of regression line; indicates change in Y per unit X</span></div>
+    <div class="glossary-item"><span class="gterm">Scatter Diagram</span><span class="gdef">Graph of paired data points to visualise correlation</span></div>
+    <div class="glossary-item"><span class="gterm">CV</span><span class="gdef">Coefficient of Variation = (σ/x̄)×100; for comparing datasets</span></div>
+    <div class="glossary-item"><span class="gterm">Frequency Distribution</span><span class="gdef">Table showing frequency of each class of data</span></div>
+    <div class="glossary-item"><span class="gterm">Ogive</span><span class="gdef">Cumulative frequency curve</span></div>
+  </div>
+</section>
+
+<!-- ===================== CRASH REVISION ===================== -->
+<section id="crash-revision" class="content-section">
+  <div class="section-header">
+    <span class="unit-tag">Quick Revision</span>
+    <h2>🚀 Crash Revision — Exam Night</h2>
+  </div>
+
+  <div class="crash-unit">
+    <h3>⚡ Unit I — Sets, Relations, Functions</h3>
+    <ul class="crash-list">
+      <li>Set = well-defined collection. P(A) = 2ⁿ subsets.</li>
+      <li>De Morgan: (A∪B)′=A′∩B′ &amp; (A∩B)′=A′∪B′</li>
+      <li>Inclusion–Exclusion: |A∪B|=|A|+|B|−|A∩B|</li>
+      <li>Cartesian Product: A×B = ordered pairs, |A×B|=|A||B|</li>
+      <li>Equivalence Relation = Reflexive+Symmetric+Transitive</li>
+      <li>Bijection = Injection+Surjection; Only bijections have inverses</li>
+      <li>Composite: (f∘g)(x)=f(g(x)); NOT commutative</li>
+      <li>Inverse: swap x,y then solve for y</li>
+    </ul>
+  </div>
+
+  <div class="crash-unit">
+    <h3>⚡ Unit II — Logic, Matrices, Determinants</h3>
+    <ul class="crash-list">
+      <li>p→q is False ONLY when p=T, q=F</li>
+      <li>Tautology = always TRUE; Contradiction = always FALSE</li>
+      <li>De Morgan (Logic): ¬(p∧q)≡¬p∨¬q; ¬(p∨q)≡¬p∧¬q</li>
+      <li>Matrix multiply: (m×p)(p×n)=(m×n); AB≠BA</li>
+      <li>(AB)ᵀ=BᵀAᵀ; (Aᵀ)ᵀ=A</li>
+      <li>A⁻¹ = adj(A)/|A|; only if |A|≠0</li>
+      <li>Cramer's: x=D₁/D, y=D₂/D, z=D₃/D</li>
+      <li>Area of △ = ½|det of 3×3 with coordinates|</li>
+    </ul>
+  </div>
+
+  <div class="crash-unit">
+    <h3>⚡ Unit III — Statistics</h3>
+    <ul class="crash-list">
+      <li>Mean: Σx/n (ungrouped), Σfx/Σf (grouped)</li>
+      <li>Median (grouped): L+[(n/2−cf)/f]×h</li>
+      <li>Mode (grouped): L+[(f₁−f₀)/(2f₁−f₀−f₂)]×h</li>
+      <li>Empirical: Mode = 3 Median − 2 Mean</li>
+      <li>MD = Σ|x−x̄|/n; σ = √[Σ(x−x̄)²/n]</li>
+      <li>CV = (σ/x̄)×100 → smaller CV = more consistent</li>
+      <li>Histogram: touching bars; Bar chart: gaps</li>
+    </ul>
+  </div>
+
+  <div class="crash-unit">
+    <h3>⚡ Unit IV — Correlation &amp; Regression</h3>
+    <ul class="crash-list">
+      <li>r range: −1 to +1; r=0 → no linear relation</li>
+      <li>Karl Pearson: r = [nΣxy−ΣxΣy] / √{[nΣx²−(Σx)²][nΣy²−(Σy)²]}</li>
+      <li>Spearman: ρ = 1 − 6ΣD²/[n(n²−1)]</li>
+      <li>b<sub>yx</sub>=r·σ<sub>y</sub>/σ<sub>x</sub>; b<sub>xy</sub>=r·σ<sub>x</sub>/σ<sub>y</sub></li>
+      <li>r = ±√(b<sub>yx</sub>·b<sub>xy</sub>); both b's same sign as r</li>
+      <li>Both lines pass through (x̄, ȳ)</li>
+      <li>r=±1 → lines coincide; r=0 → lines perpendicular</li>
+    </ul>
+  </div>
+
+  <div class="mnemonic-box">
+    <h3>🧠 Mnemonics</h3>
+    <ul>
+      <li><strong>SET operations:</strong> "Uncle Can Dance" → Union, Complement, Difference</li>
+      <li><strong>Equivalence Relation:</strong> "RST" → Reflexive, Symmetric, Transitive</li>
+      <li><strong>Measures of CT:</strong> "Mean Mango Mode" — Mean uses Math, Median is Middle, Mode is Most</li>
+      <li><strong>Regression lines:</strong> "YoX and XoY" — Line of Y on X predicts Y; Line of X on Y predicts X</li>
+      <li><strong>r formula memory:</strong> "n cross minus cross over square cross" = [nΣxy−ΣxΣy]/√{...}</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- MOBILE OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

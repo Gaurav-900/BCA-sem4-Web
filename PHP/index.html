@@ -1,0 +1,2432 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHP Programming — BCA-64T-211 Study Portal</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<header class="topbar">
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle sidebar">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="topbar-brand">
+    <span class="brand-icon">&#60;?php</span>
+    <span class="brand-text">BCA-64T-211 <em>PHP Programming</em></span>
+  </div>
+  <div class="topbar-actions">
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search topics…" autocomplete="off">
+      <div id="searchResults" class="search-results"></div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">☀</button>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="sidebar-section">
+      <span class="sidebar-label">Quick Links</span>
+      <a class="nav-link" href="#home" data-target="home">🏠 Home</a>
+      <a class="nav-link" href="#glossary" data-target="glossary">📖 Glossary</a>
+      <a class="nav-link" href="#formula-sheet" data-target="formula-sheet">📋 Formula Sheet</a>
+      <a class="nav-link" href="#crash-revision" data-target="crash-revision">⚡ Crash Revision</a>
+    </div>
+
+    <div class="sidebar-section">
+      <span class="sidebar-label">Unit I</span>
+      <a class="nav-link" href="#u1-intro" data-target="u1-intro">1.1 Introduction to PHP</a>
+      <a class="nav-link" href="#u1-install" data-target="u1-install">1.2 Installation & Config</a>
+      <a class="nav-link" href="#u1-features" data-target="u1-features">1.3 Features of PHP</a>
+      <a class="nav-link" href="#u1-writing" data-target="u1-writing">1.4 Writing & Parsing PHP</a>
+      <a class="nav-link" href="#u1-embedding" data-target="u1-embedding">1.5 Embedding PHP & HTML</a>
+      <a class="nav-link" href="#u1-exam" data-target="u1-exam">1.6 Unit I Exam Q&amp;A</a>
+    </div>
+
+    <div class="sidebar-section">
+      <span class="sidebar-label">Unit II</span>
+      <a class="nav-link" href="#u2-datatypes" data-target="u2-datatypes">2.1 Data Types</a>
+      <a class="nav-link" href="#u2-operators" data-target="u2-operators">2.2 Operators</a>
+      <a class="nav-link" href="#u2-variables" data-target="u2-variables">2.3 PHP Variables</a>
+      <a class="nav-link" href="#u2-control" data-target="u2-control">2.4 Control Structures</a>
+      <a class="nav-link" href="#u2-loops" data-target="u2-loops">2.5 Loops</a>
+      <a class="nav-link" href="#u2-arrays" data-target="u2-arrays">2.6 Arrays</a>
+      <a class="nav-link" href="#u2-exam" data-target="u2-exam">2.7 Unit II Exam Q&amp;A</a>
+    </div>
+
+    <div class="sidebar-section">
+      <span class="sidebar-label">Unit III</span>
+      <a class="nav-link" href="#u3-strings" data-target="u3-strings">3.1 Strings</a>
+      <a class="nav-link" href="#u3-regex" data-target="u3-regex">3.2 Regular Expressions</a>
+      <a class="nav-link" href="#u3-functions" data-target="u3-functions">3.3 Functions</a>
+      <a class="nav-link" href="#u3-forms" data-target="u3-forms">3.4 Form Data Handling</a>
+      <a class="nav-link" href="#u3-cookies" data-target="u3-cookies">3.5 Cookies & Sessions</a>
+      <a class="nav-link" href="#u3-exam" data-target="u3-exam">3.6 Unit III Exam Q&amp;A</a>
+    </div>
+
+    <div class="sidebar-section">
+      <span class="sidebar-label">Unit IV</span>
+      <a class="nav-link" href="#u4-exceptions" data-target="u4-exceptions">4.1 Exception Handling</a>
+      <a class="nav-link" href="#u4-files" data-target="u4-files">4.2 File Handling</a>
+      <a class="nav-link" href="#u4-database" data-target="u4-database">4.3 Database Handling</a>
+      <a class="nav-link" href="#u4-exam" data-target="u4-exam">4.4 Unit IV Exam Q&amp;A</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Overlay for mobile -->
+<div class="overlay" id="overlay"></div>
+
+<!-- Main Content -->
+<main class="main-content" id="mainContent">
+
+<!-- ===================== HOME ===================== -->
+<section id="home" class="content-section active">
+  <div class="hero-banner">
+    <div class="hero-tag">BCA-64T-211</div>
+    <h1>PHP Programming</h1>
+    <p class="hero-sub">Complete university-level study notes covering all 4 units — exam-ready, theory-heavy, and structured for semester success.</p>
+    <div class="hero-pills">
+      <span>4 Units</span><span>12+ Topics</span><span>100+ Q&A</span><span>Code Examples</span>
+    </div>
+  </div>
+  <div class="card-grid">
+    <div class="card" onclick="showSection('u1-intro')">
+      <div class="card-num">01</div>
+      <h3>Introduction to PHP</h3>
+      <p>Installation, configuration, features, writing & embedding PHP</p>
+    </div>
+    <div class="card" onclick="showSection('u2-datatypes')">
+      <div class="card-num">02</div>
+      <h3>Control Structures & Arrays</h3>
+      <p>Data types, operators, variables, loops, conditionals, arrays</p>
+    </div>
+    <div class="card" onclick="showSection('u3-strings')">
+      <div class="card-num">03</div>
+      <h3>Strings, Functions & Forms</h3>
+      <p>String handling, regex, user-defined functions, form data, sessions</p>
+    </div>
+    <div class="card" onclick="showSection('u4-exceptions')">
+      <div class="card-num">04</div>
+      <h3>Exceptions, Files & Database</h3>
+      <p>Error handling, file I/O, MySQL connectivity & CRUD operations</p>
+    </div>
+  </div>
+
+  <div class="info-banner">
+    <strong>📚 References:</strong> PHP Complete Reference (Holzner, TMH) · Beginning PHP 5.3 (Doyle, Wiley) · Core PHP Programming (Atkinson, Pearson) · Beginning PHP 5.0 Database (Scollo et al., Wrox)
+  </div>
+</section>
+
+<!-- ===================== UNIT I ===================== -->
+<section id="u1-intro" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit I</span>
+    <h2>Introduction to PHP</h2>
+    <p class="unit-desc">PHP (Hypertext Preprocessor) is a widely-used, open-source, server-side scripting language designed for web development. This unit covers PHP's origin, purpose, working model, and how it integrates with web servers.</p>
+  </div>
+
+  <div class="objectives-box">
+    <h4>🎯 Learning Objectives</h4>
+    <ul>
+      <li>Understand what PHP is and its history</li>
+      <li>Know PHP's role in the web technology stack</li>
+      <li>Distinguish PHP from client-side scripting</li>
+      <li>Understand the client-server model with PHP</li>
+    </ul>
+  </div>
+
+  <h3>What is PHP?</h3>
+  <div class="definition-box">
+    <strong>Definition:</strong> PHP (Hypertext Preprocessor) is an open-source, general-purpose scripting language that is especially suited for web development and can be embedded directly into HTML. PHP code is executed on the <em>server side</em>, and the result is sent to the client's browser as plain HTML.
+  </div>
+
+  <p>PHP was originally created by <strong>Rasmus Lerdorf</strong> in 1994. The name initially stood for "Personal Home Page Tools." Over time it evolved into a full-featured language and was renamed to the recursive acronym <em>PHP: Hypertext Preprocessor</em>.</p>
+
+  <h3>How PHP Works — The Client-Server Model</h3>
+
+  <svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" class="diagram">
+    <defs>
+      <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="var(--accent)"/>
+      </marker>
+    </defs>
+    <!-- Browser -->
+    <rect x="20" y="60" width="140" height="80" rx="10" fill="var(--card-bg)" stroke="var(--accent)" stroke-width="2"/>
+    <text x="90" y="95" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="bold">Browser</text>
+    <text x="90" y="115" text-anchor="middle" fill="var(--text-muted)" font-size="11">(Client)</text>
+    <!-- Arrow 1 -->
+    <line x1="160" y1="100" x2="245" y2="100" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="202" y="92" text-anchor="middle" fill="var(--text-muted)" font-size="10">HTTP Request</text>
+    <!-- Web Server -->
+    <rect x="250" y="60" width="140" height="80" rx="10" fill="var(--card-bg)" stroke="var(--accent2)" stroke-width="2"/>
+    <text x="320" y="90" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="bold">Web Server</text>
+    <text x="320" y="108" text-anchor="middle" fill="var(--text-muted)" font-size="11">Apache/IIS</text>
+    <text x="320" y="124" text-anchor="middle" fill="var(--accent2)" font-size="10">PHP Engine</text>
+    <!-- Arrow 2 -->
+    <line x1="390" y1="100" x2="475" y2="100" stroke="var(--accent2)" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="432" y="92" text-anchor="middle" fill="var(--text-muted)" font-size="10">SQL Query</text>
+    <!-- Database -->
+    <rect x="480" y="60" width="140" height="80" rx="10" fill="var(--card-bg)" stroke="var(--accent3)" stroke-width="2"/>
+    <text x="550" y="95" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="bold">MySQL</text>
+    <text x="550" y="115" text-anchor="middle" fill="var(--text-muted)" font-size="11">(Database)</text>
+    <!-- Arrow Back -->
+    <line x1="480" y1="115" x2="395" y2="115" stroke="var(--accent3)" stroke-width="2" marker-end="url(#arr)"/>
+    <line x1="250" y1="115" x2="165" y2="115" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="432" y="132" text-anchor="middle" fill="var(--text-muted)" font-size="10">Results</text>
+    <text x="202" y="132" text-anchor="middle" fill="var(--text-muted)" font-size="10">HTML Response</text>
+  </svg>
+
+  <div class="steps-list">
+    <div class="step"><span class="step-num">1</span><div><strong>Client sends HTTP request</strong> — browser requests a <code>.php</code> file</div></div>
+    <div class="step"><span class="step-num">2</span><div><strong>Web server intercepts</strong> — passes the file to the PHP interpreter</div></div>
+    <div class="step"><span class="step-num">3</span><div><strong>PHP engine executes</strong> — processes PHP code, may query database</div></div>
+    <div class="step"><span class="step-num">4</span><div><strong>HTML is generated</strong> — PHP produces pure HTML output</div></div>
+    <div class="step"><span class="step-num">5</span><div><strong>Response sent</strong> — browser receives and renders HTML</div></div>
+  </div>
+</section>
+
+<section id="u1-install" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit I</span>
+    <h2>Installation & Configuration</h2>
+  </div>
+
+  <h3>Installing PHP with MySQL (WAMP/XAMPP)</h3>
+  <p>The easiest way to set up a PHP development environment is using an all-in-one package:</p>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Package</th><th>OS</th><th>Components</th><th>Usage</th></tr></thead>
+      <tbody>
+        <tr><td><strong>XAMPP</strong></td><td>Win/Linux/Mac</td><td>Apache, MySQL, PHP, Perl</td><td>Most popular cross-platform</td></tr>
+        <tr><td><strong>WAMP</strong></td><td>Windows only</td><td>Apache, MySQL, PHP</td><td>Windows-specific, lightweight</td></tr>
+        <tr><td><strong>LAMP</strong></td><td>Linux</td><td>Linux, Apache, MySQL, PHP</td><td>Production Linux servers</td></tr>
+        <tr><td><strong>MAMP</strong></td><td>macOS</td><td>Apache, MySQL, PHP</td><td>Mac development</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>PHP Configuration in Apache</h3>
+  <p>Apache is the most common web server for PHP. Key configuration steps:</p>
+  <div class="steps-list">
+    <div class="step"><span class="step-num">1</span><div>Install Apache and PHP separately or via XAMPP</div></div>
+    <div class="step"><span class="step-num">2</span><div>Edit <code>httpd.conf</code>: ensure <code>LoadModule php_module</code> is enabled</div></div>
+    <div class="step"><span class="step-num">3</span><div>Add <code>AddType application/x-httpd-php .php</code> to associate .php files</div></div>
+    <div class="step"><span class="step-num">4</span><div>Set <code>DocumentRoot</code> to your web folder (e.g., <code>htdocs</code>)</div></div>
+    <div class="step"><span class="step-num">5</span><div>Restart Apache; test with <code>phpinfo()</code></div></div>
+  </div>
+
+  <h3>PHP Configuration in IIS (Windows)</h3>
+  <div class="steps-list">
+    <div class="step"><span class="step-num">1</span><div>Enable IIS via Windows Features</div></div>
+    <div class="step"><span class="step-num">2</span><div>Download PHP for Windows (non-thread safe for IIS)</div></div>
+    <div class="step"><span class="step-num">3</span><div>In IIS Manager → Handler Mappings → Add Module Mapping for <code>*.php</code></div></div>
+    <div class="step"><span class="step-num">4</span><div>Point to <code>php-cgi.exe</code></div></div>
+    <div class="step"><span class="step-num">5</span><div>Configure <code>php.ini</code> settings</div></div>
+  </div>
+
+  <h3>Important php.ini Settings</h3>
+  <div class="code-block"><pre>; Error reporting
+error_reporting = E_ALL
+display_errors = On
+
+; File upload
+file_uploads = On
+upload_max_filesize = 2M
+
+; Session
+session.save_path = "/tmp"
+
+; Database
+extension=mysqli
+extension=pdo_mysql
+
+; Time zone
+date.timezone = "Asia/Kolkata"</pre></div>
+
+  <div class="tip-box">💡 <strong>Tip:</strong> After editing <code>php.ini</code>, always restart the web server for changes to take effect. Use <code>phpinfo()</code> to verify settings.</div>
+</section>
+
+<section id="u1-features" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit I</span>
+    <h2>Features of PHP</h2>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="feature-icon">🌐</span>
+      <h4>Server-Side Scripting</h4>
+      <p>PHP runs on the server; clients never see PHP source code — only the generated HTML output.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🆓</span>
+      <h4>Open Source & Free</h4>
+      <p>PHP is free to download and use. It is maintained by a large community under the PHP License.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">💻</span>
+      <h4>Cross-Platform</h4>
+      <p>PHP runs on Windows, Linux, macOS, and integrates with Apache, IIS, and Nginx.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">⚡</span>
+      <h4>Fast & Efficient</h4>
+      <p>PHP is faster than most competitors for web tasks. PHP 7+ offers 2x performance gains over PHP 5.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🗄️</span>
+      <h4>Database Support</h4>
+      <p>Supports MySQL, PostgreSQL, SQLite, Oracle, MSSQL, and more via MySQLi and PDO extensions.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🔒</span>
+      <h4>Security Features</h4>
+      <p>Built-in functions for input sanitization, password hashing, session management, and SSL support.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🔗</span>
+      <h4>HTML Embedding</h4>
+      <p>PHP can be embedded directly within HTML, making page generation straightforward and intuitive.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📦</span>
+      <h4>Large Standard Library</h4>
+      <p>Thousands of built-in functions for string handling, math, file I/O, networking, image processing, and more.</p>
+    </div>
+  </div>
+
+  <h3>PHP vs Other Technologies</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Feature</th><th>PHP</th><th>ASP.NET</th><th>Python/Django</th><th>JavaScript (Node)</th></tr></thead>
+      <tbody>
+        <tr><td>Type</td><td>Server-side scripting</td><td>Server-side</td><td>Server-side</td><td>Server-side</td></tr>
+        <tr><td>Cost</td><td>Free</td><td>License cost</td><td>Free</td><td>Free</td></tr>
+        <tr><td>Platform</td><td>Cross-platform</td><td>Windows-focused</td><td>Cross-platform</td><td>Cross-platform</td></tr>
+        <tr><td>Database</td><td>All major DBs</td><td>SQL Server (native)</td><td>All major DBs</td><td>All major DBs</td></tr>
+        <tr><td>Learning Curve</td><td>Easy</td><td>Moderate</td><td>Moderate</td><td>Moderate</td></tr>
+        <tr><td>Hosting</td><td>Very widely available</td><td>Limited</td><td>Moderate</td><td>Growing</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="u1-writing" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit I</span>
+    <h2>Writing, Parsing & Executing PHP</h2>
+  </div>
+
+  <h3>PHP Syntax Basics</h3>
+  <p>PHP scripts start with <code>&lt;?php</code> and end with <code>?&gt;</code>. Each statement ends with a semicolon.</p>
+
+  <div class="code-block"><pre>&lt;?php
+  // This is a PHP comment
+  echo "Hello, World!";
+  print "This also outputs text.";
+?&gt;</pre></div>
+
+  <h3>PHP Tags — Four Forms</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Tag Style</th><th>Opening</th><th>Closing</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Standard (recommended)</td><td><code>&lt;?php</code></td><td><code>?&gt;</code></td><td>✅ Always works</td></tr>
+        <tr><td>Short Echo Tag</td><td><code>&lt;?=</code></td><td><code>?&gt;</code></td><td>✅ PHP 5.4+ always on</td></tr>
+        <tr><td>Short Tag</td><td><code>&lt;?</code></td><td><code>?&gt;</code></td><td>⚠️ Requires short_open_tag=On</td></tr>
+        <tr><td>ASP Style</td><td><code>&lt;%</code></td><td><code>%&gt;</code></td><td>❌ Deprecated PHP 7+</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>How PHP Parsing Works</h3>
+  <p>When a PHP file is requested:</p>
+  <div class="steps-list">
+    <div class="step"><span class="step-num">1</span><div>Server recognizes the <code>.php</code> extension</div></div>
+    <div class="step"><span class="step-num">2</span><div>Zend Engine (PHP interpreter) reads the file character by character</div></div>
+    <div class="step"><span class="step-num">3</span><div>HTML portions are output <em>as-is</em></div></div>
+    <div class="step"><span class="step-num">4</span><div>PHP blocks between <code>&lt;?php</code> and <code>?&gt;</code> are executed</div></div>
+    <div class="step"><span class="step-num">5</span><div>Final merged output (all HTML) sent to browser</div></div>
+  </div>
+
+  <h3>Output Functions</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Function</th><th>Description</th><th>Return Value</th></tr></thead>
+      <tbody>
+        <tr><td><code>echo</code></td><td>Outputs one or more strings; language construct</td><td>No return value</td></tr>
+        <tr><td><code>print</code></td><td>Outputs a string; language construct</td><td>Always 1</td></tr>
+        <tr><td><code>print_r()</code></td><td>Prints human-readable info about a variable</td><td>1 or string</td></tr>
+        <tr><td><code>var_dump()</code></td><td>Prints type and value of variable(s)</td><td>void</td></tr>
+        <tr><td><code>var_export()</code></td><td>Prints valid PHP representation</td><td>void or string</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>First PHP Program — Step by Step</h3>
+  <div class="code-block"><pre>&lt;?php
+  // Step 1: PHP opening tag
+  $name = "BCA Student";      // Step 2: Variable assignment
+  $subject = "PHP Programming"; // Step 3: Another variable
+  
+  // Step 4: Output using echo
+  echo "Hello, " . $name . "!&lt;br&gt;";
+  echo "Subject: " . $subject;
+  
+  // Step 5: PHP info (shows all config)
+  // phpinfo();  // Uncomment to test
+?&gt;</pre></div>
+
+  <div class="output-box"><strong>Output:</strong><br>Hello, BCA Student!<br>Subject: PHP Programming</div>
+</section>
+
+<section id="u1-embedding" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit I</span>
+    <h2>Embedding PHP in HTML</h2>
+  </div>
+
+  <p>One of PHP's most powerful features is that it can be embedded directly within HTML. The PHP engine processes only the code within PHP tags and passes everything else through unchanged.</p>
+
+  <h3>Embedding Patterns</h3>
+
+  <div class="code-block"><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;&lt;?php echo "Dynamic Title"; ?&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome, &lt;?= $username ?&gt;!&lt;/h1&gt;
+
+  &lt;?php if ($loggedIn): ?&gt;
+    &lt;p&gt;You are logged in.&lt;/p&gt;
+  &lt;?php else: ?&gt;
+    &lt;p&gt;Please log in.&lt;/p&gt;
+  &lt;?php endif; ?&gt;
+
+  &lt;ul&gt;
+    &lt;?php foreach ($items as $item): ?&gt;
+      &lt;li&gt;&lt;?= htmlspecialchars($item) ?&gt;&lt;/li&gt;
+    &lt;?php endforeach; ?&gt;
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></div>
+
+  <div class="tip-box">💡 <strong>Best Practice:</strong> Use <code>htmlspecialchars()</code> when outputting user data to prevent Cross-Site Scripting (XSS) attacks.</div>
+
+  <h3>Viewing PHP in Browser</h3>
+  <p>To view a PHP file in the browser:</p>
+  <ol>
+    <li>Save the file with <code>.php</code> extension inside the web server root (e.g., <code>htdocs/</code> in XAMPP)</li>
+    <li>Start Apache (and MySQL if needed)</li>
+    <li>Open browser and navigate to <code>http://localhost/yourfile.php</code></li>
+    <li>Never open the file directly from the filesystem — PHP won't execute</li>
+  </ol>
+
+  <div class="warning-box">⚠️ <strong>Common Mistake:</strong> Opening a <code>.php</code> file by double-clicking it will show raw PHP code, NOT the output. Always access PHP through a web server via <code>localhost</code>.</div>
+</section>
+
+<section id="u1-exam" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit I — Exam</span>
+    <h2>Unit I — Exam Questions & Answers</h2>
+  </div>
+
+  <div class="exam-section">
+    <h3>2-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q1. What does PHP stand for?</div>
+      <div class="answer">PHP stands for <strong>Hypertext Preprocessor</strong> (recursive acronym). It is a server-side scripting language used for web development.</div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q2. What is the difference between echo and print?</div>
+      <div class="answer"><code>echo</code> can output multiple values and has no return value. <code>print</code> outputs one value and always returns 1. <code>echo</code> is marginally faster.</div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q3. What is the standard PHP opening tag?</div>
+      <div class="answer">The standard opening tag is <code>&lt;?php</code> and closing tag is <code>?&gt;</code>. This always works regardless of server configuration.</div>
+    </div>
+
+    <h3>5-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q4. Explain how PHP works in a client-server model.</div>
+      <div class="answer">
+        <ol>
+          <li>Client browser sends an HTTP request for a <code>.php</code> page</li>
+          <li>The web server (Apache/IIS) receives the request</li>
+          <li>Server passes the PHP file to the PHP interpreter (Zend Engine)</li>
+          <li>PHP executes the code — may connect to database, process data</li>
+          <li>PHP generates HTML output</li>
+          <li>Web server sends the HTML response to the browser</li>
+          <li>Browser renders the HTML — client never sees PHP source code</li>
+        </ol>
+        This is called server-side processing. The key advantage is that business logic and database credentials are hidden from the client.
+      </div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q5. What are the key features of PHP?</div>
+      <div class="answer">
+        <ul>
+          <li><strong>Open Source:</strong> Free to download and use</li>
+          <li><strong>Cross-Platform:</strong> Runs on Windows, Linux, macOS</li>
+          <li><strong>Embedded in HTML:</strong> PHP code within HTML pages</li>
+          <li><strong>Database Integration:</strong> Supports MySQL, Oracle, PostgreSQL, etc.</li>
+          <li><strong>Server-Side:</strong> Executed on server, sends HTML to client</li>
+          <li><strong>Large Library:</strong> 1000+ built-in functions</li>
+          <li><strong>Security:</strong> Built-in functions for data sanitization</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>10-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q6. Explain the installation and configuration of PHP with Apache and MySQL.</div>
+      <div class="answer">
+        <strong>Using XAMPP (recommended for beginners):</strong>
+        <ol>
+          <li>Download XAMPP from apachefriends.org</li>
+          <li>Install and launch XAMPP Control Panel</li>
+          <li>Start Apache and MySQL modules</li>
+          <li>Place PHP files in the <code>htdocs</code> folder</li>
+          <li>Access via <code>http://localhost/filename.php</code></li>
+        </ol>
+        <strong>Manual Apache + PHP configuration:</strong>
+        <ul>
+          <li>Install Apache web server</li>
+          <li>Download PHP binaries, extract to <code>C:\PHP</code></li>
+          <li>Copy <code>php.ini-development</code> to <code>php.ini</code></li>
+          <li>Edit <code>httpd.conf</code>: add <code>LoadModule php_module "C:/PHP/php8apache2_4.dll"</code></li>
+          <li>Add <code>PHPIniDir "C:/PHP"</code></li>
+          <li>Add <code>AddType application/x-httpd-php .php</code></li>
+          <li>Restart Apache</li>
+        </ul>
+        <strong>Testing:</strong> Create test.php with <code>&lt;?php phpinfo(); ?&gt;</code> and open in browser to verify.
+      </div>
+    </div>
+
+    <h3>Key Points for Exam</h3>
+    <div class="keypoints-box">
+      <ul>
+        <li>PHP = Hypertext Preprocessor (recursive acronym)</li>
+        <li>Created by Rasmus Lerdorf in 1994</li>
+        <li>Server-side: code runs on server, browser gets HTML</li>
+        <li>Standard tag: <code>&lt;?php ... ?&gt;</code></li>
+        <li>Files must be accessed via web server (localhost), not directly</li>
+        <li>XAMPP = Apache + MySQL + PHP + Perl (cross-platform)</li>
+        <li>Configuration file: <code>php.ini</code></li>
+        <li>IIS: need to configure Handler Mappings for *.php → php-cgi.exe</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== UNIT II ===================== -->
+<section id="u2-datatypes" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit II</span>
+    <h2>Data Types in PHP</h2>
+  </div>
+
+  <div class="objectives-box">
+    <h4>🎯 Learning Objectives</h4>
+    <ul>
+      <li>Understand PHP's dynamic typing system</li>
+      <li>Know all PHP data types and their uses</li>
+      <li>Use type-checking and type-casting functions</li>
+    </ul>
+  </div>
+
+  <p>PHP is a <strong>loosely typed</strong> (dynamically typed) language — you do not need to declare variable types explicitly. PHP determines the type automatically based on the value assigned.</p>
+
+  <h3>PHP Data Types Overview</h3>
+
+  <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" class="diagram">
+    <!-- Central -->
+    <rect x="270" y="130" width="160" height="50" rx="8" fill="var(--accent)" opacity="0.9"/>
+    <text x="350" y="161" text-anchor="middle" fill="#fff" font-weight="bold" font-size="14">PHP Data Types</text>
+    <!-- Scalar -->
+    <rect x="30" y="30" width="130" height="45" rx="8" fill="var(--card-bg)" stroke="var(--accent2)" stroke-width="2"/>
+    <text x="95" y="52" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="bold">Scalar</text>
+    <text x="95" y="68" text-anchor="middle" fill="var(--text-muted)" font-size="10">int, float, bool, string</text>
+    <line x1="95" y1="75" x2="270" y2="145" stroke="var(--accent2)" stroke-width="1.5" stroke-dasharray="4"/>
+    <!-- Compound -->
+    <rect x="540" y="30" width="130" height="45" rx="8" fill="var(--card-bg)" stroke="var(--accent3)" stroke-width="2"/>
+    <text x="605" y="52" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="bold">Compound</text>
+    <text x="605" y="68" text-anchor="middle" fill="var(--text-muted)" font-size="10">array, object</text>
+    <line x1="605" y1="75" x2="430" y2="145" stroke="var(--accent3)" stroke-width="1.5" stroke-dasharray="4"/>
+    <!-- Special -->
+    <rect x="30" y="245" width="130" height="45" rx="8" fill="var(--card-bg)" stroke="var(--accent)" stroke-width="2"/>
+    <text x="95" y="268" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="bold">Special</text>
+    <text x="95" y="284" text-anchor="middle" fill="var(--text-muted)" font-size="10">null, resource</text>
+    <line x1="95" y1="245" x2="270" y2="175" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4"/>
+    <!-- Pseudo -->
+    <rect x="540" y="245" width="130" height="45" rx="8" fill="var(--card-bg)" stroke="var(--accent)" stroke-width="2"/>
+    <text x="605" y="268" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="bold">Pseudo-types</text>
+    <text x="605" y="284" text-anchor="middle" fill="var(--text-muted)" font-size="10">mixed, void, never</text>
+    <line x1="605" y1="245" x2="430" y2="175" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4"/>
+  </svg>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Data Type</th><th>Category</th><th>Example</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td><code>integer</code></td><td>Scalar</td><td><code>$x = 42;</code></td><td>Whole numbers, range depends on platform (32 or 64-bit)</td></tr>
+        <tr><td><code>float</code></td><td>Scalar</td><td><code>$f = 3.14;</code></td><td>Decimal numbers (double precision)</td></tr>
+        <tr><td><code>boolean</code></td><td>Scalar</td><td><code>$b = true;</code></td><td>true or false (case-insensitive)</td></tr>
+        <tr><td><code>string</code></td><td>Scalar</td><td><code>$s = "Hello";</code></td><td>Sequence of characters, single or double quotes</td></tr>
+        <tr><td><code>array</code></td><td>Compound</td><td><code>$a = [1, 2, 3];</code></td><td>Ordered map / collection of values</td></tr>
+        <tr><td><code>object</code></td><td>Compound</td><td><code>$obj = new MyClass();</code></td><td>Instance of a class</td></tr>
+        <tr><td><code>NULL</code></td><td>Special</td><td><code>$n = null;</code></td><td>Variable with no value</td></tr>
+        <tr><td><code>resource</code></td><td>Special</td><td><code>$f = fopen(...)</code></td><td>Reference to external resource (file, DB conn.)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Type Juggling & Type Casting</h3>
+  <div class="code-block"><pre>&lt;?php
+// Type juggling (automatic)
+$result = "5" + 3;   // 8 (int) — PHP converts "5" to 5
+$sum = "10.5" + 2;   // 12.5 (float)
+
+// Type casting (manual)
+$x = (int) "42abc";    // 42
+$y = (float) "3.9";    // 3.9
+$z = (bool) 0;         // false
+$s = (string) 100;     // "100"
+$a = (array) "hello";  // ["hello"]
+
+// Type checking functions
+var_dump(is_int(42));       // bool(true)
+var_dump(is_string("hi"));  // bool(true)
+var_dump(is_null(null));    // bool(true)
+var_dump(is_array([1,2]));  // bool(true)
+gettype($result);           // returns "integer"
+?&gt;</pre></div>
+</section>
+
+<section id="u2-operators" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit II</span>
+    <h2>Operators in PHP</h2>
+  </div>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Category</th><th>Operators</th><th>Example</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Arithmetic</strong></td><td>+ - * / % **</td><td><code>10 % 3</code></td><td>1</td></tr>
+        <tr><td><strong>Assignment</strong></td><td>= += -= *= /= .= %= **=</td><td><code>$x += 5</code></td><td>$x = $x + 5</td></tr>
+        <tr><td><strong>Comparison</strong></td><td>== != === !== &lt; &gt; &lt;= &gt;= &lt;=&gt;</td><td><code>"1" == 1</code></td><td>true</td></tr>
+        <tr><td><strong>Logical</strong></td><td>&amp;&amp; || ! and or xor</td><td><code>true &amp;&amp; false</code></td><td>false</td></tr>
+        <tr><td><strong>String</strong></td><td>. .=</td><td><code>"Hi"."PHP"</code></td><td>"HiPHP"</td></tr>
+        <tr><td><strong>Increment/Decrement</strong></td><td>++ --</td><td><code>$x++</code></td><td>Post-increment</td></tr>
+        <tr><td><strong>Bitwise</strong></td><td>&amp; | ^ ~ &lt;&lt; &gt;&gt;</td><td><code>5 &amp; 3</code></td><td>1</td></tr>
+        <tr><td><strong>Ternary</strong></td><td>? :</td><td><code>$a > $b ? $a : $b</code></td><td>Max value</td></tr>
+        <tr><td><strong>Null Coalescing</strong></td><td>??</td><td><code>$x ?? "default"</code></td><td>"default" if $x null</td></tr>
+        <tr><td><strong>Spaceship</strong></td><td>&lt;=&gt;</td><td><code>1 &lt;=&gt; 2</code></td><td>-1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="definition-box">
+    <strong>Strict Comparison (===):</strong> Compares both value AND type. <code>1 === "1"</code> is <strong>false</strong> because types differ (int vs string). Use <code>===</code> to avoid type juggling surprises.
+  </div>
+
+  <div class="definition-box">
+    <strong>Spaceship Operator (&lt;=&gt;):</strong> Returns -1 if left &lt; right, 0 if equal, 1 if left &gt; right. Very useful for sorting callbacks.
+  </div>
+
+  <h3>Operator Precedence (High to Low)</h3>
+  <div class="code-block"><pre>// From highest to lowest precedence:
+// ++ -- (increment/decrement)
+// ** (power)
+// * / %
+// + - .
+// &lt; &lt;= &gt; &gt;=
+// == != === !== &lt;=&gt;
+// &amp;&amp;
+// ||
+// ??
+// ? : (ternary)
+// = += -= etc (assignment)
+// and
+// xor
+// or
+
+// Example:
+$result = 2 + 3 * 4;   // 14, not 20 (* has higher precedence)
+$result = (2 + 3) * 4; // 20 (parentheses override)</pre></div>
+</section>
+
+<section id="u2-variables" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit II</span>
+    <h2>PHP Variables — Static & Global</h2>
+  </div>
+
+  <div class="definition-box">
+    <strong>Variable:</strong> A named memory location that holds a value. In PHP, all variables start with a <code>$</code> sign followed by the variable name. PHP is case-sensitive for variable names.
+  </div>
+
+  <h3>Variable Rules</h3>
+  <ul>
+    <li>Must start with <code>$</code> followed by a letter or underscore</li>
+    <li>Can contain letters, numbers, underscores</li>
+    <li>Case-sensitive: <code>$name</code> ≠ <code>$Name</code></li>
+    <li>No type declaration needed</li>
+  </ul>
+
+  <h3>Variable Scope</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Scope</th><th>Description</th><th>Accessible Where</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Local</strong></td><td>Declared inside a function</td><td>Only within that function</td></tr>
+        <tr><td><strong>Global</strong></td><td>Declared outside functions</td><td>Anywhere outside functions; inside functions only with <code>global</code> keyword</td></tr>
+        <tr><td><strong>Static</strong></td><td>Declared with <code>static</code> inside function</td><td>Retains value between function calls</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="code-block"><pre>&lt;?php
+$globalVar = 100;  // Global variable
+
+function testScope() {
+    // Without global keyword, $globalVar is undefined here
+    echo isset($globalVar) ? "exists" : "not found"; // "not found"
+    
+    // Access global variable using 'global' keyword
+    global $globalVar;
+    echo $globalVar; // 100
+    
+    // $GLOBALS superglobal (alternative)
+    echo $GLOBALS['globalVar']; // 100
+}
+
+// ---- STATIC VARIABLE ----
+function counter() {
+    static $count = 0; // Initialized only ONCE
+    $count++;
+    echo $count . " ";
+}
+
+counter(); // 1
+counter(); // 2
+counter(); // 3
+// Without static, each call would print "1"
+?&gt;</pre></div>
+
+  <div class="definition-box">
+    <strong>Static Variable:</strong> A local variable that persists its value between function calls. Initialized only once — the first time the function is called. Useful for counters, caching.
+  </div>
+
+  <h3>Comments in PHP</h3>
+  <div class="code-block"><pre>&lt;?php
+// Single-line comment (C++ style)
+# Single-line comment (Shell style)
+
+/* 
+   Multi-line comment
+   Spans multiple lines
+*/
+
+/**
+ * DocBlock comment (for documentation)
+ * @param string $name The name to greet
+ * @return string The greeting
+ */
+function greet(string $name): string {
+    return "Hello, $name!";
+}
+?&gt;</pre></div>
+
+  <h3>Variable Variables</h3>
+  <div class="code-block"><pre>&lt;?php
+$varName = "city";
+$$varName = "Jaipur";    // Creates $city = "Jaipur"
+echo $city;              // Jaipur
+echo $$varName;          // Jaipur
+?&gt;</pre></div>
+</section>
+
+<section id="u2-control" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit II</span>
+    <h2>Control Structures — Conditional Statements</h2>
+  </div>
+
+  <h3>if…else Statement</h3>
+  <div class="code-block"><pre>&lt;?php
+$marks = 75;
+
+// Simple if
+if ($marks >= 40) {
+    echo "Pass";
+}
+
+// if-else
+if ($marks >= 60) {
+    echo "Distinction";
+} else {
+    echo "Pass";
+}
+
+// if-elseif-else
+if ($marks >= 75) {
+    echo "First Division";
+} elseif ($marks >= 60) {
+    echo "Second Division";
+} elseif ($marks >= 40) {
+    echo "Third Division";
+} else {
+    echo "Fail";
+}
+?&gt;</pre></div>
+
+  <h3>Switch Statement</h3>
+  <div class="code-block"><pre>&lt;?php
+$day = "Monday";
+
+switch ($day) {
+    case "Monday":
+        echo "Start of work week";
+        break;          // break prevents fall-through
+    case "Friday":
+        echo "End of work week";
+        break;
+    case "Saturday":
+    case "Sunday":      // Multiple cases with same action
+        echo "Weekend!";
+        break;
+    default:
+        echo "Midweek";
+}
+
+// Switch uses loose comparison (==), not strict (===)
+?&gt;</pre></div>
+
+  <h3>Ternary Operator ( ? : )</h3>
+  <div class="code-block"><pre>&lt;?php
+// Syntax: condition ? value_if_true : value_if_false
+$age = 20;
+$status = ($age >= 18) ? "Adult" : "Minor";
+echo $status; // Adult
+
+// Null Coalescing (PHP 7+) — shorter version for null checks
+$username = $_GET['user'] ?? "Guest";
+// Equivalent to: isset($_GET['user']) ? $_GET['user'] : "Guest"
+
+// Null coalescing assignment (PHP 7.4+)
+$data['key'] ??= "default";
+?&gt;</pre></div>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Feature</th><th>if-else</th><th>switch</th><th>ternary</th></tr></thead>
+      <tbody>
+        <tr><td>Comparison type</td><td>Any boolean expression</td><td>Equality (==)</td><td>Any boolean expression</td></tr>
+        <tr><td>Multiple conditions</td><td>elseif chains</td><td>Multiple case labels</td><td>Nested (messy)</td></tr>
+        <tr><td>Best for</td><td>Range checks, complex logic</td><td>Single variable, many values</td><td>Simple inline assignments</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="u2-loops" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit II</span>
+    <h2>Loops in PHP</h2>
+  </div>
+
+  <svg viewBox="0 0 700 130" xmlns="http://www.w3.org/2000/svg" class="diagram">
+    <rect x="10" y="30" width="120" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent)" stroke-width="2"/>
+    <text x="70" y="60" text-anchor="middle" fill="var(--text)" font-weight="bold" font-size="12">while</text>
+    <text x="70" y="78" text-anchor="middle" fill="var(--text-muted)" font-size="10">Pre-check</text>
+    <text x="70" y="93" text-anchor="middle" fill="var(--text-muted)" font-size="10">0 or more times</text>
+
+    <rect x="150" y="30" width="120" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent2)" stroke-width="2"/>
+    <text x="210" y="60" text-anchor="middle" fill="var(--text)" font-weight="bold" font-size="12">do…while</text>
+    <text x="210" y="78" text-anchor="middle" fill="var(--text-muted)" font-size="10">Post-check</text>
+    <text x="210" y="93" text-anchor="middle" fill="var(--text-muted)" font-size="10">1 or more times</text>
+
+    <rect x="290" y="30" width="120" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent3)" stroke-width="2"/>
+    <text x="350" y="60" text-anchor="middle" fill="var(--text)" font-weight="bold" font-size="12">for</text>
+    <text x="350" y="78" text-anchor="middle" fill="var(--text-muted)" font-size="10">Count-controlled</text>
+    <text x="350" y="93" text-anchor="middle" fill="var(--text-muted)" font-size="10">Known iterations</text>
+
+    <rect x="430" y="30" width="120" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent)" stroke-width="2"/>
+    <text x="490" y="60" text-anchor="middle" fill="var(--text)" font-weight="bold" font-size="12">foreach</text>
+    <text x="490" y="78" text-anchor="middle" fill="var(--text-muted)" font-size="10">Array iteration</text>
+    <text x="490" y="93" text-anchor="middle" fill="var(--text-muted)" font-size="10">For arrays/objects</text>
+
+    <rect x="570" y="30" width="120" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent2)" stroke-width="2"/>
+    <text x="630" y="60" text-anchor="middle" fill="var(--text)" font-weight="bold" font-size="12">break/continue</text>
+    <text x="630" y="78" text-anchor="middle" fill="var(--text-muted)" font-size="10">Loop control</text>
+    <text x="630" y="93" text-anchor="middle" fill="var(--text-muted)" font-size="10">Exit or skip</text>
+  </svg>
+
+  <div class="code-block"><pre>&lt;?php
+// ---- WHILE LOOP ----
+$i = 1;
+while ($i <= 5) {
+    echo $i . " ";
+    $i++;
+}
+// Output: 1 2 3 4 5
+
+// ---- DO-WHILE LOOP ----
+$i = 10;
+do {
+    echo $i . " ";  // Executes at least once
+    $i++;
+} while ($i <= 5);
+// Output: 10 (condition fails, but body executed once)
+
+// ---- FOR LOOP ----
+for ($i = 1; $i <= 5; $i++) {
+    echo $i . " ";
+}
+// Syntax: for(init; condition; increment)
+
+// ---- FOREACH LOOP ----
+$fruits = ["apple", "banana", "cherry"];
+foreach ($fruits as $fruit) {
+    echo $fruit . " ";
+}
+// With key => value
+$ages = ["Alice" => 25, "Bob" => 30];
+foreach ($ages as $name => $age) {
+    echo "$name is $age years old. ";
+}
+
+// ---- BREAK & CONTINUE ----
+for ($i = 1; $i <= 10; $i++) {
+    if ($i == 6) break;      // Exits loop entirely
+    if ($i % 2 == 0) continue; // Skips even numbers
+    echo $i . " ";
+}
+// Output: 1 3 5
+
+// break with a number: break 2 breaks out of 2 nested loops
+
+// ---- EXIT & DIE ----
+// exit("Error message") — terminates entire script
+// die("Error") — alias of exit
+?&gt;</pre></div>
+
+  <h3>exit, die, return</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Statement</th><th>Purpose</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr><td><code>exit()</code></td><td>Terminate script execution</td><td>Stops entire PHP script; can output message or exit code</td></tr>
+        <tr><td><code>die()</code></td><td>Alias for exit()</td><td>Same as exit; commonly used after DB connection failure</td></tr>
+        <tr><td><code>return</code></td><td>Exit from current function</td><td>Returns control to caller; in global scope, behaves like exit</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="u2-arrays" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit II</span>
+    <h2>Arrays in PHP</h2>
+  </div>
+
+  <div class="definition-box">
+    <strong>Array:</strong> An ordered map that associates keys with values. PHP arrays can hold values of different types, including other arrays. Arrays in PHP are implemented as an ordered hash map.
+  </div>
+
+  <h3>Types of Arrays</h3>
+
+  <div class="code-block"><pre>&lt;?php
+// =============================================
+// 1. NUMERIC (INDEXED) ARRAY
+// =============================================
+$colors = ["Red", "Green", "Blue"];  // Modern syntax
+$nums = array(10, 20, 30);           // Old syntax
+
+echo $colors[0];   // Red
+echo $colors[2];   // Blue
+
+// Useful functions
+echo count($colors);   // 3
+echo implode(", ", $colors);  // Red, Green, Blue
+sort($colors);   // Sort ascending
+
+// =============================================
+// 2. ASSOCIATIVE ARRAY
+// =============================================
+$student = [
+    "name"    => "Rahul",
+    "age"     => 21,
+    "branch"  => "BCA"
+];
+
+echo $student["name"];    // Rahul
+echo $student["branch"];  // BCA
+
+// Loop through
+foreach ($student as $key => $value) {
+    echo "$key: $value\n";
+}
+
+// Functions
+ksort($student);   // Sort by key
+asort($student);   // Sort by value, maintain key association
+array_keys($student);   // ["name", "age", "branch"]
+array_values($student); // ["Rahul", 21, "BCA"]
+
+// =============================================
+// 3. MULTIDIMENSIONAL ARRAY
+// =============================================
+$students = [
+    ["name" => "Alice", "marks" => 85],
+    ["name" => "Bob",   "marks" => 72],
+    ["name" => "Carol", "marks" => 91]
+];
+
+// Access: $students[row][column]
+echo $students[0]["name"];   // Alice
+echo $students[2]["marks"];  // 91
+
+// Loop
+foreach ($students as $s) {
+    echo $s["name"] . ": " . $s["marks"] . "\n";
+}
+?&gt;</pre></div>
+
+  <h3>Important Array Functions</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Function</th><th>Description</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><code>array_push()</code></td><td>Add element at end</td><td><code>array_push($arr, "new")</code></td></tr>
+        <tr><td><code>array_pop()</code></td><td>Remove last element</td><td><code>$val = array_pop($arr)</code></td></tr>
+        <tr><td><code>array_shift()</code></td><td>Remove first element</td><td><code>$val = array_shift($arr)</code></td></tr>
+        <tr><td><code>array_unshift()</code></td><td>Add element at beginning</td><td><code>array_unshift($arr, "new")</code></td></tr>
+        <tr><td><code>array_merge()</code></td><td>Merge two arrays</td><td><code>array_merge($a, $b)</code></td></tr>
+        <tr><td><code>array_slice()</code></td><td>Extract portion of array</td><td><code>array_slice($arr, 1, 3)</code></td></tr>
+        <tr><td><code>array_search()</code></td><td>Search for value, return key</td><td><code>array_search("val", $arr)</code></td></tr>
+        <tr><td><code>in_array()</code></td><td>Check if value exists</td><td><code>in_array("val", $arr)</code></td></tr>
+        <tr><td><code>array_reverse()</code></td><td>Reverse array</td><td><code>array_reverse($arr)</code></td></tr>
+        <tr><td><code>array_unique()</code></td><td>Remove duplicate values</td><td><code>array_unique($arr)</code></td></tr>
+        <tr><td><code>sort()</code></td><td>Sort indexed array</td><td><code>sort($arr)</code></td></tr>
+        <tr><td><code>ksort()</code></td><td>Sort associative by key</td><td><code>ksort($assoc)</code></td></tr>
+        <tr><td><code>array_map()</code></td><td>Apply callback to each element</td><td><code>array_map('strtoupper', $arr)</code></td></tr>
+        <tr><td><code>array_filter()</code></td><td>Filter elements by callback</td><td><code>array_filter($arr, fn($v)=>$v>10)</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="u2-exam" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit II — Exam</span>
+    <h2>Unit II — Exam Questions & Answers</h2>
+  </div>
+
+  <div class="exam-section">
+    <h3>2-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q1. What is the difference between == and === in PHP?</div>
+      <div class="answer"><code>==</code> (loose equality) compares values after type conversion. <code>===</code> (strict equality) compares both value AND type without conversion. Example: <code>"1" == 1</code> is true, but <code>"1" === 1</code> is false.</div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q2. What is a static variable?</div>
+      <div class="answer">A static variable is declared with the <code>static</code> keyword inside a function. It retains its value between function calls instead of being re-initialized. Initialized only once.</div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q3. Difference between break and continue?</div>
+      <div class="answer"><code>break</code> exits the loop entirely. <code>continue</code> skips the rest of the current iteration and moves to the next one.</div>
+    </div>
+
+    <h3>5-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q4. Explain types of arrays in PHP with examples.</div>
+      <div class="answer">
+        <strong>1. Numeric/Indexed Array:</strong> Keys are automatically assigned integers starting at 0.
+        <code>$a = ["Red", "Green", "Blue"];</code> — Access: <code>$a[0]</code> = "Red"<br><br>
+        <strong>2. Associative Array:</strong> Keys are user-defined strings.
+        <code>$s = ["name"=>"Alice", "age"=>20];</code> — Access: <code>$s["name"]</code><br><br>
+        <strong>3. Multidimensional Array:</strong> Array of arrays.
+        <code>$data = [["name"=>"A","marks"=>80], ["name"=>"B","marks"=>70]];</code> — Access: <code>$data[0]["name"]</code>
+      </div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q5. Explain all PHP loop types with syntax.</div>
+      <div class="answer">
+        <strong>while:</strong> Checks condition first; may execute 0 times.<br>
+        <strong>do-while:</strong> Executes at least once; checks condition after.<br>
+        <strong>for:</strong> Count-controlled; init, condition, and increment in one line.<br>
+        <strong>foreach:</strong> For iterating over arrays; no index management needed.
+      </div>
+    </div>
+
+    <h3>10-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q6. Explain all PHP data types with examples. What is type juggling?</div>
+      <div class="answer">
+        <strong>PHP has 8 primitive types:</strong><br>
+        Scalar: int, float, bool, string — Compound: array, object — Special: null, resource<br><br>
+        <strong>Type Juggling:</strong> PHP automatically converts types during operations.
+        Example: <code>"5" + 3 = 8</code> (PHP converts string "5" to int 5).<br>
+        This can cause bugs — use strict comparison <code>===</code> when type matters.<br><br>
+        <strong>Type Casting:</strong> Manual conversion using (int), (float), (string), (bool), (array) casts.
+      </div>
+    </div>
+
+    <h3>Key Points for Exam</h3>
+    <div class="keypoints-box">
+      <ul>
+        <li>PHP is loosely typed — types are determined at runtime</li>
+        <li>Variable names are case-sensitive and start with $</li>
+        <li><code>static</code> variables retain value between calls; initialized once</li>
+        <li><code>global</code> keyword needed to access global vars inside functions</li>
+        <li><code>do-while</code> executes body at least once</li>
+        <li><code>foreach</code> is designed for arrays: <code>foreach($arr as $k => $v)</code></li>
+        <li><code>switch</code> uses loose (==) comparison</li>
+        <li>Ternary: <code>condition ? true_value : false_value</code></li>
+        <li>Null coalescing: <code>$x ?? "default"</code></li>
+        <li>Array functions: sort, ksort, asort, array_push, array_pop, in_array, count</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== UNIT III ===================== -->
+<section id="u3-strings" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit III</span>
+    <h2>Strings in PHP</h2>
+  </div>
+
+  <div class="objectives-box">
+    <h4>🎯 Learning Objectives</h4>
+    <ul>
+      <li>Create and manipulate strings in PHP</li>
+      <li>Use built-in string functions effectively</li>
+      <li>Search, replace, and format strings</li>
+    </ul>
+  </div>
+
+  <h3>Creating Strings</h3>
+  <div class="code-block"><pre>&lt;?php
+// 1. Single-quoted string — literal, no variable interpolation
+$s1 = 'Hello, PHP!';
+$s2 = 'It\'s a string';  // Escape single quote
+
+// 2. Double-quoted string — supports variable interpolation
+$name = "World";
+$s3 = "Hello, $name!";        // Hello, World!
+$s4 = "Hello, {$name}!";     // Same, braces for clarity
+
+// 3. Heredoc — multi-line, supports interpolation
+$text = &lt;&lt;&lt;EOT
+This is a heredoc string.
+It can span multiple lines.
+Variable: $name
+EOT;
+
+// 4. Nowdoc — multi-line, NO interpolation (like single quotes)
+$code = &lt;&lt;&lt;'EOT'
+This is $name (not interpolated)
+EOT;
+
+// String as array of characters
+$str = "Hello";
+echo $str[0];  // H
+echo $str[4];  // o
+?&gt;</pre></div>
+
+  <h3>String Functions Reference</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Function</th><th>Description</th><th>Example</th><th>Output</th></tr></thead>
+      <tbody>
+        <tr><td><code>strlen()</code></td><td>Length of string</td><td><code>strlen("Hello")</code></td><td>5</td></tr>
+        <tr><td><code>strtoupper()</code></td><td>Convert to uppercase</td><td><code>strtoupper("hello")</code></td><td>HELLO</td></tr>
+        <tr><td><code>strtolower()</code></td><td>Convert to lowercase</td><td><code>strtolower("HELLO")</code></td><td>hello</td></tr>
+        <tr><td><code>ucfirst()</code></td><td>Capitalize first char</td><td><code>ucfirst("hello")</code></td><td>Hello</td></tr>
+        <tr><td><code>ucwords()</code></td><td>Capitalize each word</td><td><code>ucwords("hello world")</code></td><td>Hello World</td></tr>
+        <tr><td><code>trim()</code></td><td>Remove whitespace</td><td><code>trim("  hi  ")</code></td><td>"hi"</td></tr>
+        <tr><td><code>ltrim()</code></td><td>Remove left whitespace</td><td><code>ltrim("  hi")</code></td><td>"hi"</td></tr>
+        <tr><td><code>rtrim()</code></td><td>Remove right whitespace</td><td><code>rtrim("hi  ")</code></td><td>"hi"</td></tr>
+        <tr><td><code>str_repeat()</code></td><td>Repeat string</td><td><code>str_repeat("ab", 3)</code></td><td>ababab</td></tr>
+        <tr><td><code>str_word_count()</code></td><td>Count words</td><td><code>str_word_count("Hello PHP")</code></td><td>2</td></tr>
+        <tr><td><code>strrev()</code></td><td>Reverse string</td><td><code>strrev("Hello")</code></td><td>olleH</td></tr>
+        <tr><td><code>str_pad()</code></td><td>Pad string to length</td><td><code>str_pad("5", 3, "0", STR_PAD_LEFT)</code></td><td>005</td></tr>
+        <tr><td><code>chunk_split()</code></td><td>Split into chunks</td><td><code>chunk_split("ABCDEF", 2, "-")</code></td><td>AB-CD-EF-</td></tr>
+        <tr><td><code>wordwrap()</code></td><td>Wrap string to width</td><td><code>wordwrap($str, 75, "\n")</code></td><td>Wrapped string</td></tr>
+        <tr><td><code>number_format()</code></td><td>Format number</td><td><code>number_format(1234.5, 2)</code></td><td>1,234.50</td></tr>
+        <tr><td><code>sprintf()</code></td><td>Format string</td><td><code>sprintf("%.2f", 3.14159)</code></td><td>3.14</td></tr>
+        <tr><td><code>nl2br()</code></td><td>Newline to &lt;br&gt;</td><td><code>nl2br("a\nb")</code></td><td>a&lt;br&gt;b</td></tr>
+        <tr><td><code>htmlspecialchars()</code></td><td>Convert HTML chars</td><td><code>htmlspecialchars("&lt;p&gt;")</code></td><td>&amp;lt;p&amp;gt;</td></tr>
+        <tr><td><code>strip_tags()</code></td><td>Remove HTML tags</td><td><code>strip_tags("&lt;b&gt;Hi&lt;/b&gt;")</code></td><td>Hi</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Searching & Replacing</h3>
+  <div class="code-block"><pre>&lt;?php
+$str = "Hello PHP World PHP";
+
+// Search
+echo strpos($str, "PHP");      // 6 (first occurrence)
+echo strrpos($str, "PHP");     // 16 (last occurrence)
+echo strstr($str, "PHP");      // "PHP World PHP" (from first match)
+echo stripos($str, "php");     // 6 (case-insensitive)
+echo substr($str, 6, 3);       // "PHP" (start, length)
+echo substr_count($str, "PHP"); // 2
+
+// Replace
+echo str_replace("PHP", "Python", $str);  // Hello Python World Python
+echo str_ireplace("php", "JAVA", $str);   // case-insensitive replace
+echo substr_replace($str, "Java", 6, 3);  // Hello Java World PHP
+
+// Contains (PHP 8+)
+echo str_contains($str, "PHP") ? "yes" : "no";  // yes
+echo str_starts_with($str, "Hello") ? "yes" : "no";  // yes
+echo str_ends_with($str, "PHP") ? "yes" : "no";   // yes
+?&gt;</pre></div>
+
+  <h3>Splitting Strings</h3>
+  <div class="code-block"><pre>&lt;?php
+$csv = "apple,banana,cherry";
+
+// explode — split by delimiter
+$fruits = explode(",", $csv);
+// ["apple", "banana", "cherry"]
+
+// implode / join — reverse of explode
+echo implode(" | ", $fruits);  // apple | banana | cherry
+
+// str_split — split into array of characters (or by length)
+$chars = str_split("Hello");     // ["H","e","l","l","o"]
+$chunks = str_split("Hello", 2); // ["He","ll","o"]
+?&gt;</pre></div>
+</section>
+
+<section id="u3-regex" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit III</span>
+    <h2>Regular Expressions in PHP</h2>
+  </div>
+
+  <div class="definition-box">
+    <strong>Regular Expression (Regex):</strong> A sequence of characters that defines a search pattern. PHP uses <strong>PCRE (Perl Compatible Regular Expressions)</strong> via the <code>preg_*</code> functions.
+  </div>
+
+  <h3>Regex Syntax Quick Reference</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Pattern</th><th>Meaning</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><code>.</code></td><td>Any single character (except newline)</td><td><code>/h.t/</code> → hat, hot, hit</td></tr>
+        <tr><td><code>*</code></td><td>Zero or more of preceding</td><td><code>/ab*/</code> → a, ab, abb</td></tr>
+        <tr><td><code>+</code></td><td>One or more of preceding</td><td><code>/ab+/</code> → ab, abb</td></tr>
+        <tr><td><code>?</code></td><td>Zero or one of preceding</td><td><code>/colou?r/</code> → color, colour</td></tr>
+        <tr><td><code>{n}</code></td><td>Exactly n occurrences</td><td><code>/\d{4}/</code> → 2024</td></tr>
+        <tr><td><code>{n,m}</code></td><td>Between n and m occurrences</td><td><code>/\d{2,4}/</code> → 12, 123, 1234</td></tr>
+        <tr><td><code>^</code></td><td>Start of string</td><td><code>/^Hello/</code></td></tr>
+        <tr><td><code>$</code></td><td>End of string</td><td><code>/World$/</code></td></tr>
+        <tr><td><code>[abc]</code></td><td>Character class</td><td><code>/[aeiou]/</code> → vowel</td></tr>
+        <tr><td><code>[^abc]</code></td><td>Negated character class</td><td><code>/[^0-9]/</code> → non-digit</td></tr>
+        <tr><td><code>\d</code></td><td>Digit [0-9]</td><td><code>/\d+/</code></td></tr>
+        <tr><td><code>\w</code></td><td>Word character [a-zA-Z0-9_]</td><td><code>/\w+/</code></td></tr>
+        <tr><td><code>\s</code></td><td>Whitespace</td><td><code>/\s+/</code></td></tr>
+        <tr><td><code>(abc)</code></td><td>Capturing group</td><td><code>/(abc)+/</code></td></tr>
+        <tr><td><code>a|b</code></td><td>Alternation (or)</td><td><code>/cat|dog/</code></td></tr>
+        <tr><td><code>i</code> flag</td><td>Case-insensitive</td><td><code>/hello/i</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>PHP Regex Functions</h3>
+  <div class="code-block"><pre>&lt;?php
+$email = "student@example.com";
+$phone = "9876543210";
+$str = "The price is Rs. 250 and Rs. 500";
+
+// preg_match — returns 1 if match found
+if (preg_match('/^[\w.-]+@[\w.-]+\.\w{2,}$/', $email)) {
+    echo "Valid email";
+}
+
+// preg_match_all — find ALL matches
+preg_match_all('/\d+/', $str, $matches);
+print_r($matches[0]);  // [250, 500]
+
+// preg_replace — replace pattern with string
+$clean = preg_replace('/\s+/', ' ', "Hello   World");
+// "Hello World"
+
+// preg_split — split string by pattern
+$words = preg_split('/\s+/', "Hello   PHP   World");
+// ["Hello", "PHP", "World"]
+
+// Validate phone number (10 digits)
+if (preg_match('/^\d{10}$/', $phone)) {
+    echo "Valid phone";
+}
+
+// Named groups
+preg_match('/(?P&lt;year&gt;\d{4})-(?P&lt;month&gt;\d{2})/', "2024-06", $m);
+echo $m['year'];  // 2024
+?&gt;</pre></div>
+</section>
+
+<section id="u3-functions" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit III</span>
+    <h2>Functions in PHP</h2>
+  </div>
+
+  <div class="definition-box">
+    <strong>Function:</strong> A named, reusable block of code that performs a specific task. Functions promote code reuse, modularity, and maintainability. PHP supports both user-defined and built-in functions.
+  </div>
+
+  <h3>Defining and Calling Functions</h3>
+  <div class="code-block"><pre>&lt;?php
+// ---- BASIC FUNCTION ----
+function greet() {
+    echo "Hello, World!";
+}
+greet();  // Call the function
+
+// ---- FUNCTION WITH PARAMETERS ----
+function add($a, $b) {
+    return $a + $b;
+}
+$result = add(10, 20);  // 30
+
+// ---- DEFAULT PARAMETER VALUES ----
+function welcome($name = "Guest") {
+    echo "Welcome, $name!";
+}
+welcome();          // Welcome, Guest!
+welcome("Rahul");   // Welcome, Rahul!
+
+// ---- RETURN VALUE ----
+function square($n) {
+    return $n * $n;
+}
+$sq = square(5);  // 25
+
+// ---- TYPE DECLARATIONS (PHP 7+) ----
+function multiply(int $a, int $b): int {
+    return $a * $b;
+}
+
+// ---- VARIABLE NUMBER OF ARGUMENTS ----
+function sumAll(...$nums) {
+    return array_sum($nums);
+}
+echo sumAll(1, 2, 3, 4, 5);  // 15
+
+// ---- PASSING BY REFERENCE ----
+function increment(&$val) {
+    $val++;  // Modifies original variable
+}
+$x = 10;
+increment($x);
+echo $x;  // 11
+
+// ---- PASSING BY VALUE (default) ----
+function doubleIt($val) {
+    $val *= 2;  // Only modifies local copy
+}
+$y = 10;
+doubleIt($y);
+echo $y;  // Still 10
+
+// ---- ANONYMOUS FUNCTION (closure) ----
+$multiply = function($a, $b) {
+    return $a * $b;
+};
+echo $multiply(3, 4);  // 12
+
+// ---- ARROW FUNCTION (PHP 7.4+) ----
+$double = fn($x) => $x * 2;
+echo $double(5);  // 10
+
+// ---- RECURSIVE FUNCTION ----
+function factorial($n) {
+    if ($n <= 1) return 1;
+    return $n * factorial($n - 1);  // Calls itself
+}
+echo factorial(5);  // 120
+
+// ---- RETURNING MULTIPLE VALUES (via array) ----
+function minMax($arr) {
+    return [min($arr), max($arr)];
+}
+[$min, $max] = minMax([3, 1, 4, 1, 5, 9]);
+echo "Min: $min, Max: $max";  // Min: 1, Max: 9
+?&gt;</pre></div>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Parameter Concept</th><th>Description</th><th>Syntax</th></tr></thead>
+      <tbody>
+        <tr><td>By Value</td><td>Copy passed; original unchanged</td><td><code>function f($x)</code></td></tr>
+        <tr><td>By Reference</td><td>Original modified inside function</td><td><code>function f(&$x)</code></td></tr>
+        <tr><td>Default value</td><td>Used when argument omitted</td><td><code>function f($x = 10)</code></td></tr>
+        <tr><td>Variadic</td><td>Accepts any number of args</td><td><code>function f(...$args)</code></td></tr>
+        <tr><td>Type hint</td><td>Enforces parameter type</td><td><code>function f(int $x)</code></td></tr>
+        <tr><td>Return type</td><td>Declares return type</td><td><code>function f(): string</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="u3-forms" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit III</span>
+    <h2>Form Data Handling</h2>
+  </div>
+
+  <p>HTML forms are the primary way users input data into web applications. PHP provides superglobal arrays to receive this data server-side.</p>
+
+  <svg viewBox="0 0 700 170" xmlns="http://www.w3.org/2000/svg" class="diagram">
+    <defs>
+      <marker id="arr2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="var(--accent)"/>
+      </marker>
+    </defs>
+    <rect x="20" y="55" width="180" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent)" stroke-width="2"/>
+    <text x="110" y="85" text-anchor="middle" fill="var(--text)" font-weight="bold" font-size="12">HTML Form</text>
+    <text x="110" y="103" text-anchor="middle" fill="var(--text-muted)" font-size="10">method="GET" or "POST"</text>
+    <text x="110" y="118" text-anchor="middle" fill="var(--text-muted)" font-size="10">action="handler.php"</text>
+    <line x1="200" y1="90" x2="280" y2="90" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr2)"/>
+    <text x="240" y="82" text-anchor="middle" fill="var(--text-muted)" font-size="10">Submit</text>
+
+    <rect x="285" y="40" width="160" height="110" rx="8" fill="var(--card-bg)" stroke="var(--accent2)" stroke-width="2"/>
+    <text x="365" y="65" text-anchor="middle" fill="var(--text)" font-weight="bold" font-size="12">PHP Superglobals</text>
+    <text x="365" y="82" text-anchor="middle" fill="var(--accent2)" font-size="11">$_GET</text>
+    <text x="365" y="99" text-anchor="middle" fill="var(--accent3)" font-size="11">$_POST</text>
+    <text x="365" y="116" text-anchor="middle" fill="var(--accent)" font-size="11">$_REQUEST</text>
+    <text x="365" y="133" text-anchor="middle" fill="var(--text-muted)" font-size="10">(combines GET+POST+COOKIE)</text>
+    <line x1="445" y1="90" x2="515" y2="90" stroke="var(--accent2)" stroke-width="2" marker-end="url(#arr2)"/>
+
+    <rect x="520" y="55" width="160" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent3)" stroke-width="2"/>
+    <text x="600" y="82" text-anchor="middle" fill="var(--text)" font-weight="bold" font-size="12">PHP Response</text>
+    <text x="600" y="100" text-anchor="middle" fill="var(--text-muted)" font-size="10">Process &amp; Generate HTML</text>
+    <text x="600" y="116" text-anchor="middle" fill="var(--text-muted)" font-size="10">Output to browser</text>
+  </svg>
+
+  <h3>$_GET vs $_POST vs $_REQUEST</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Feature</th><th>$_GET</th><th>$_POST</th><th>$_REQUEST</th></tr></thead>
+      <tbody>
+        <tr><td>Data location</td><td>URL query string</td><td>HTTP body</td><td>GET + POST + COOKIE</td></tr>
+        <tr><td>Visibility</td><td>Visible in URL</td><td>Hidden in request body</td><td>Depends on source</td></tr>
+        <tr><td>Length limit</td><td>~2000 chars (URL limit)</td><td>No practical limit</td><td>Depends on source</td></tr>
+        <tr><td>Caching</td><td>Cached in browser</td><td>Not cached</td><td>Depends</td></tr>
+        <tr><td>Bookmarkable</td><td>Yes</td><td>No</td><td>No</td></tr>
+        <tr><td>Use for</td><td>Search, filters, navigation</td><td>Login, registration, sensitive data</td><td>Rare; prefer GET or POST</td></tr>
+        <tr><td>Security</td><td>Less secure</td><td>More secure</td><td>Moderate</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="code-block"><pre>&lt;!-- HTML Form --&gt;
+&lt;form method="POST" action="process.php"&gt;
+    &lt;input type="text" name="username" placeholder="Name"&gt;
+    &lt;input type="password" name="password"&gt;
+    &lt;input type="email" name="email"&gt;
+    &lt;select name="branch"&gt;
+        &lt;option value="bca"&gt;BCA&lt;/option&gt;
+        &lt;option value="mca"&gt;MCA&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+
+&lt;?php  // process.php
+// Retrieve POST data
+$username = $_POST['username'] ?? '';
+$password = $_POST['password'] ?? '';
+$email    = $_POST['email'] ?? '';
+
+// Always sanitize input!
+$username = htmlspecialchars(trim($username));
+$email    = filter_var($email, FILTER_SANITIZE_EMAIL);
+
+// Validate
+if (empty($username)) {
+    echo "Username is required";
+} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "Invalid email";
+} else {
+    echo "Welcome, $username!";
+}
+
+// GET example: URL = page.php?id=5&name=Alice
+$id   = $_GET['id']   ?? 0;
+$name = $_GET['name'] ?? '';
+?&gt;</pre></div>
+</section>
+
+<section id="u3-cookies" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit III</span>
+    <h2>Cookies & Session Management</h2>
+  </div>
+
+  <h3>Cookies</h3>
+  <div class="definition-box">
+    <strong>Cookie:</strong> A small piece of data stored in the user's browser by the server. Cookies persist between requests and even browser sessions. They are sent with every HTTP request to the server via HTTP headers.
+  </div>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Aspect</th><th>Cookies</th><th>Sessions</th></tr></thead>
+      <tbody>
+        <tr><td>Storage</td><td>Client browser</td><td>Server (file/DB)</td></tr>
+        <tr><td>Security</td><td>Less secure (client side)</td><td>More secure (server side)</td></tr>
+        <tr><td>Data size</td><td>~4KB per cookie</td><td>No practical limit</td></tr>
+        <tr><td>Expiry</td><td>Set explicitly</td><td>When browser closes (default)</td></tr>
+        <tr><td>Dependency</td><td>Cookie must be enabled</td><td>Session ID via cookie or URL</td></tr>
+        <tr><td>Use case</td><td>"Remember me", preferences</td><td>Login state, shopping cart</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="code-block"><pre>&lt;?php
+// =============================================
+// COOKIES
+// =============================================
+// setcookie(name, value, expiry, path, domain, secure, httponly)
+setcookie("username", "Rahul", time() + (86400 * 30), "/");
+// Expires in 30 days (86400 = seconds in a day)
+
+// Must be called BEFORE any output (HTML headers)!
+setcookie("theme", "dark", time() + 3600);  // 1 hour
+
+// Read cookie
+if (isset($_COOKIE['username'])) {
+    echo "Welcome back, " . $_COOKIE['username'];
+}
+
+// Delete cookie — set expiry in the past
+setcookie("username", "", time() - 3600);
+
+// =============================================
+// SESSIONS
+// =============================================
+session_start();  // MUST call before any output
+
+// Set session variables
+$_SESSION['user_id'] = 101;
+$_SESSION['username'] = "Alice";
+$_SESSION['role'] = "admin";
+
+// Read session
+echo $_SESSION['username'];  // Alice
+
+// Check if session variable exists
+if (isset($_SESSION['user_id'])) {
+    echo "User logged in";
+}
+
+// Remove one session variable
+unset($_SESSION['role']);
+
+// Destroy entire session (logout)
+session_start();
+$_SESSION = [];  // Clear all variables
+session_destroy();  // Destroy session file on server
+
+// Regenerate session ID (security best practice)
+session_regenerate_id(true);  // Prevents session fixation
+?&gt;</pre></div>
+
+  <div class="warning-box">⚠️ <strong>Important:</strong> Both <code>setcookie()</code> and <code>session_start()</code> must be called <em>before</em> any HTML output is sent to the browser. Calling them after output causes a "headers already sent" error.</div>
+</section>
+
+<section id="u3-exam" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit III — Exam</span>
+    <h2>Unit III — Exam Questions & Answers</h2>
+  </div>
+
+  <div class="exam-section">
+    <h3>2-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q1. What is the difference between $_GET and $_POST?</div>
+      <div class="answer"><code>$_GET</code> sends data via URL query string — visible, limited to ~2000 chars. <code>$_POST</code> sends data in HTTP body — hidden, no size limit, more secure for sensitive data.</div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q2. What is a cookie? How is it set in PHP?</div>
+      <div class="answer">A cookie is a small data file stored in the browser. Set using <code>setcookie(name, value, expiry)</code>. Must be called before any HTML output.</div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q3. What is the difference between single-quoted and double-quoted strings?</div>
+      <div class="answer">Single-quoted strings are literal — variables are NOT interpolated. Double-quoted strings interpolate variable values. Example: <code>$name="PHP"</code> — <code>'$name'</code> outputs "$name", <code>"$name"</code> outputs "PHP".</div>
+    </div>
+
+    <h3>5-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q4. Explain session management in PHP.</div>
+      <div class="answer">
+        Sessions allow server to remember user data across multiple pages.<br>
+        <strong>Starting:</strong> <code>session_start()</code> must be called first (before any output)<br>
+        <strong>Setting:</strong> <code>$_SESSION['key'] = value</code><br>
+        <strong>Reading:</strong> <code>$val = $_SESSION['key']</code><br>
+        <strong>Removing:</strong> <code>unset($_SESSION['key'])</code><br>
+        <strong>Destroying:</strong> <code>session_destroy()</code><br>
+        Session data stored on server; a session ID cookie is sent to browser to link requests.
+      </div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q5. What are regular expressions? List any 5 regex patterns with examples.</div>
+      <div class="answer">
+        Regex is a pattern for matching text. PHP uses <code>preg_*</code> functions.<br>
+        <code>^</code> — start of string<br>
+        <code>$</code> — end of string<br>
+        <code>\d{10}</code> — exactly 10 digits<br>
+        <code>[a-z]+</code> — one or more lowercase letters<br>
+        <code>[\w.-]+@[\w.-]+\.\w{2,}</code> — email pattern
+      </div>
+    </div>
+
+    <h3>10-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q6. Explain user-defined functions in PHP. Discuss parameter passing techniques.</div>
+      <div class="answer">
+        <strong>Defining:</strong> <code>function name($params) { ... return value; }</code><br><br>
+        <strong>By Value:</strong> A copy is passed; original not modified. Default behavior.<br>
+        <strong>By Reference:</strong> <code>&$var</code> — original variable modified inside function<br>
+        <strong>Default Parameters:</strong> <code>function f($x = 10)</code> — used when arg omitted<br>
+        <strong>Variadic:</strong> <code>function f(...$args)</code> — accepts any number of arguments<br>
+        <strong>Type Hints:</strong> <code>function f(int $x): string</code> — enforces type<br><br>
+        <strong>Return:</strong> <code>return value</code> — exits function and returns value to caller. Without return, function returns null.<br>
+        <strong>Recursive Functions:</strong> Call themselves. Example: factorial, fibonacci.
+      </div>
+    </div>
+
+    <h3>Key Points for Exam</h3>
+    <div class="keypoints-box">
+      <ul>
+        <li><code>setcookie()</code> and <code>session_start()</code> must be before any output</li>
+        <li>Sessions stored on server; cookies on browser</li>
+        <li>Use <code>htmlspecialchars()</code> to prevent XSS attacks</li>
+        <li>By reference: <code>&$var</code> — modifies original variable</li>
+        <li>PHP PCRE regex functions: preg_match, preg_replace, preg_split, preg_match_all</li>
+        <li>Delimiters in PHP regex: <code>/pattern/flags</code></li>
+        <li><code>explode()</code> splits string; <code>implode()</code> joins array to string</li>
+        <li><code>strpos()</code> finds first occurrence; <code>strrpos()</code> finds last</li>
+        <li>Heredoc = multi-line string with variable interpolation</li>
+        <li>Nowdoc = multi-line string WITHOUT interpolation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== UNIT IV ===================== -->
+<section id="u4-exceptions" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit IV</span>
+    <h2>Exception Handling in PHP</h2>
+  </div>
+
+  <div class="objectives-box">
+    <h4>🎯 Learning Objectives</h4>
+    <ul>
+      <li>Understand errors vs exceptions</li>
+      <li>Use try-catch-finally blocks</li>
+      <li>Create custom exception classes</li>
+      <li>Handle multiple exception types</li>
+    </ul>
+  </div>
+
+  <h3>Errors vs Exceptions</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Aspect</th><th>Error</th><th>Exception</th></tr></thead>
+      <tbody>
+        <tr><td>Definition</td><td>Unrecoverable problem in code or environment</td><td>Recoverable problem thrown by code</td></tr>
+        <tr><td>Handling</td><td>set_error_handler()</td><td>try-catch block</td></tr>
+        <tr><td>Examples</td><td>Parse errors, fatal errors, warnings</td><td>Database failure, invalid input, file not found</td></tr>
+        <tr><td>Class</td><td>Error class (PHP 7+)</td><td>Exception class</td></tr>
+        <tr><td>Flow</td><td>Usually terminates script</td><td>Can be caught and handled gracefully</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>PHP Error Levels</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>E_ERROR</td><td>1</td><td>Fatal error — script halts</td></tr>
+        <tr><td>E_WARNING</td><td>2</td><td>Non-fatal — script continues</td></tr>
+        <tr><td>E_NOTICE</td><td>8</td><td>Minor issue — undefined variable</td></tr>
+        <tr><td>E_PARSE</td><td>4</td><td>Syntax error during parsing</td></tr>
+        <tr><td>E_ALL</td><td>—</td><td>All errors and warnings</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>try-catch-throw-finally</h3>
+  <div class="code-block"><pre>&lt;?php
+// ---- BASIC EXCEPTION HANDLING ----
+try {
+    $denominator = 0;
+    if ($denominator == 0) {
+        throw new Exception("Division by zero is not allowed!");
+    }
+    $result = 100 / $denominator;
+    echo $result;
+} catch (Exception $e) {
+    echo "Error caught: " . $e->getMessage();
+    echo "\nLine: " . $e->getLine();
+    echo "\nFile: " . $e->getFile();
+} finally {
+    echo "\nThis block always executes.";
+    // Use for cleanup: close DB connections, files, etc.
+}
+
+// ---- MULTIPLE CATCH BLOCKS ----
+function riskyOperation($type) {
+    if ($type == "invalid") {
+        throw new InvalidArgumentException("Invalid argument!");
+    }
+    if ($type == "runtime") {
+        throw new RuntimeException("Runtime error!");
+    }
+}
+
+try {
+    riskyOperation("invalid");
+} catch (InvalidArgumentException $e) {
+    echo "Invalid argument: " . $e->getMessage();
+} catch (RuntimeException $e) {
+    echo "Runtime error: " . $e->getMessage();
+} catch (Exception $e) {
+    echo "General exception: " . $e->getMessage();
+}
+
+// ---- CUSTOM EXCEPTION CLASS ----
+class DatabaseException extends Exception {
+    private $query;
+    
+    public function __construct($message, $query = "", $code = 0) {
+        parent::__construct($message, $code);
+        $this->query = $query;
+    }
+    
+    public function getQuery() {
+        return $this->query;
+    }
+    
+    public function __toString() {
+        return "DatabaseException [{$this->code}]: {$this->message}\nQuery: {$this->query}";
+    }
+}
+
+try {
+    throw new DatabaseException("Query failed", "SELECT * FROM users", 500);
+} catch (DatabaseException $e) {
+    echo $e->getQuery();
+}
+
+// ---- EXCEPTION METHODS ----
+// $e->getMessage()   — Error message string
+// $e->getCode()      — Error code
+// $e->getFile()      — File where exception was thrown
+// $e->getLine()      — Line number
+// $e->getTrace()     — Stack trace as array
+// $e->getTraceAsString() — Stack trace as string
+?&gt;</pre></div>
+
+  <svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" class="diagram">
+    <defs>
+      <marker id="arr3" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="var(--accent)"/>
+      </marker>
+    </defs>
+    <!-- try block -->
+    <rect x="20" y="80" width="160" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent)" stroke-width="2"/>
+    <text x="100" y="110" text-anchor="middle" fill="var(--text)" font-weight="bold">try { }</text>
+    <text x="100" y="130" text-anchor="middle" fill="var(--text-muted)" font-size="11">Normal execution</text>
+    <text x="100" y="145" text-anchor="middle" fill="var(--text-muted)" font-size="11">throw new Exception()</text>
+
+    <!-- Arrow no exception -->
+    <line x1="180" y1="100" x2="250" y2="60" stroke="var(--accent3)" stroke-width="2" marker-end="url(#arr3)"/>
+    <text x="215" y="72" text-anchor="middle" fill="var(--accent3)" font-size="10">No Exception</text>
+
+    <!-- Continue -->
+    <rect x="255" y="30" width="160" height="50" rx="8" fill="var(--card-bg)" stroke="var(--accent3)" stroke-width="2"/>
+    <text x="335" y="60" text-anchor="middle" fill="var(--text)" font-size="12">Continue Normally</text>
+
+    <!-- Arrow exception -->
+    <line x1="180" y1="130" x2="250" y2="130" stroke="var(--accent2)" stroke-width="2" marker-end="url(#arr3)"/>
+    <text x="215" y="122" text-anchor="middle" fill="var(--accent2)" font-size="10">Exception!</text>
+
+    <!-- catch block -->
+    <rect x="255" y="100" width="160" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent2)" stroke-width="2"/>
+    <text x="335" y="130" text-anchor="middle" fill="var(--text)" font-weight="bold">catch ($e) { }</text>
+    <text x="335" y="150" text-anchor="middle" fill="var(--text-muted)" font-size="11">Handle the error</text>
+    <text x="335" y="165" text-anchor="middle" fill="var(--text-muted)" font-size="11">Log, display, retry</text>
+
+    <!-- Arrow to finally -->
+    <line x1="415" y1="130" x2="480" y2="130" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr3)"/>
+
+    <!-- finally block -->
+    <rect x="485" y="100" width="190" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent)" stroke-width="2"/>
+    <text x="580" y="125" text-anchor="middle" fill="var(--text)" font-weight="bold">finally { }</text>
+    <text x="580" y="145" text-anchor="middle" fill="var(--text-muted)" font-size="11">Always executes</text>
+    <text x="580" y="162" text-anchor="middle" fill="var(--text-muted)" font-size="11">Cleanup code</text>
+
+    <!-- Arrow from no-exception to finally -->
+    <line x1="415" y1="55" x2="580" y2="98" stroke="var(--accent3)" stroke-width="1.5" stroke-dasharray="4" marker-end="url(#arr3)"/>
+  </svg>
+</section>
+
+<section id="u4-files" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit IV</span>
+    <h2>File Handling in PHP</h2>
+  </div>
+
+  <div class="definition-box">
+    <strong>File Handling:</strong> PHP provides a rich set of functions to create, read, write, copy, rename, and delete files on the server's filesystem. Files are represented by <em>resource handles</em> obtained via <code>fopen()</code>.
+  </div>
+
+  <h3>File Open Modes</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Mode</th><th>Meaning</th><th>File Exists</th><th>File Not Exist</th></tr></thead>
+      <tbody>
+        <tr><td><code>r</code></td><td>Read only</td><td>Opens from start</td><td>Returns false</td></tr>
+        <tr><td><code>r+</code></td><td>Read and write</td><td>Opens from start</td><td>Returns false</td></tr>
+        <tr><td><code>w</code></td><td>Write only</td><td>Truncates to zero length</td><td>Creates file</td></tr>
+        <tr><td><code>w+</code></td><td>Read and write</td><td>Truncates to zero</td><td>Creates file</td></tr>
+        <tr><td><code>a</code></td><td>Append (write)</td><td>Opens at end</td><td>Creates file</td></tr>
+        <tr><td><code>a+</code></td><td>Append (read/write)</td><td>Opens at end</td><td>Creates file</td></tr>
+        <tr><td><code>x</code></td><td>Create and write</td><td>Returns false (error)</td><td>Creates file</td></tr>
+        <tr><td><code>b</code></td><td>Binary mode</td><td>Add to mode: <code>rb</code>, <code>wb</code></td><td>Cross-platform safety</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="code-block"><pre>&lt;?php
+// =============================================
+// OPENING AND CLOSING FILES
+// =============================================
+$filename = "data.txt";
+
+// Open file
+$handle = fopen($filename, "w") or die("Cannot open file!");
+
+// Write to file
+fwrite($handle, "Hello, PHP File Handling!\n");
+fwrite($handle, "Second line of text.\n");
+
+// Close file — always close after use!
+fclose($handle);
+
+// =============================================
+// READING FILES
+// =============================================
+$handle = fopen($filename, "r");
+
+// Read entire file at once
+$content = fread($handle, filesize($filename));
+echo $content;
+fclose($handle);
+
+// Read line by line
+$handle = fopen($filename, "r");
+while (!feof($handle)) {           // feof — end of file check
+    $line = fgets($handle);        // Read one line
+    echo $line;
+}
+fclose($handle);
+
+// =============================================
+// SIMPLER FILE FUNCTIONS
+// =============================================
+// Read entire file to string (no fopen/fclose needed)
+$content = file_get_contents("data.txt");
+echo $content;
+
+// Write entire string to file
+file_put_contents("output.txt", "Hello World!");
+// Append: use FILE_APPEND flag
+file_put_contents("output.txt", "\nAppended text", FILE_APPEND);
+
+// Read file into array (line by line)
+$lines = file("data.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+foreach ($lines as $line) {
+    echo $line . "\n";
+}
+
+// =============================================
+// FILE OPERATIONS: COPY, RENAME, DELETE
+// =============================================
+copy("data.txt", "backup.txt");       // Copy file
+rename("oldname.txt", "newname.txt"); // Rename or move
+unlink("delete_me.txt");              // Delete file
+
+// =============================================
+// FILE INFORMATION
+// =============================================
+echo file_exists("data.txt") ? "exists" : "not found";
+echo filesize("data.txt");        // File size in bytes
+echo filemtime("data.txt");       // Last modified timestamp
+echo is_readable("data.txt");
+echo is_writable("data.txt");
+echo dirname(__FILE__);           // Directory of current script
+echo basename("path/to/file.php"); // "file.php"
+
+// =============================================
+// DIRECTORY OPERATIONS
+// =============================================
+mkdir("new_folder", 0755, true);      // Create directory
+rmdir("empty_folder");                // Remove directory
+$files = scandir("./");               // List files in directory
+$dir = opendir("./");
+while (($file = readdir($dir)) !== false) {
+    echo $file . "\n";
+}
+closedir($dir);
+?&gt;</pre></div>
+</section>
+
+<section id="u4-database" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit IV</span>
+    <h2>Database Handling — MySQL &amp; PHP</h2>
+  </div>
+
+  <p>PHP can connect to MySQL databases using <strong>MySQLi</strong> (MySQL Improved) or <strong>PDO</strong> (PHP Data Objects). MySQLi is MySQL-specific; PDO is database-agnostic.</p>
+
+  <svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg" class="diagram">
+    <defs>
+      <marker id="arr4" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="var(--accent)"/>
+      </marker>
+    </defs>
+    <rect x="20" y="60" width="140" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent)" stroke-width="2"/>
+    <text x="90" y="90" text-anchor="middle" fill="var(--text)" font-weight="bold">PHP Script</text>
+    <text x="90" y="110" text-anchor="middle" fill="var(--text-muted)" font-size="10">Write SQL queries</text>
+    <text x="90" y="125" text-anchor="middle" fill="var(--text-muted)" font-size="10">Process results</text>
+
+    <line x1="160" y1="95" x2="230" y2="95" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr4)"/>
+    <text x="195" y="87" text-anchor="middle" fill="var(--text-muted)" font-size="10">MySQLi/PDO</text>
+
+    <rect x="235" y="60" width="160" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent2)" stroke-width="2"/>
+    <text x="315" y="90" text-anchor="middle" fill="var(--text)" font-weight="bold">MySQL Server</text>
+    <text x="315" y="110" text-anchor="middle" fill="var(--text-muted)" font-size="10">Receives &amp; executes SQL</text>
+    <text x="315" y="125" text-anchor="middle" fill="var(--text-muted)" font-size="10">Returns result set</text>
+
+    <line x1="395" y1="95" x2="460" y2="95" stroke="var(--accent2)" stroke-width="2" marker-end="url(#arr4)"/>
+    <text x="427" y="87" text-anchor="middle" fill="var(--text-muted)" font-size="10">Result/Error</text>
+
+    <rect x="465" y="60" width="200" height="70" rx="8" fill="var(--card-bg)" stroke="var(--accent3)" stroke-width="2"/>
+    <text x="565" y="90" text-anchor="middle" fill="var(--text)" font-weight="bold">Database Tables</text>
+    <text x="565" y="110" text-anchor="middle" fill="var(--text-muted)" font-size="10">students, courses, etc.</text>
+    <text x="565" y="125" text-anchor="middle" fill="var(--text-muted)" font-size="10">Persistent storage</text>
+  </svg>
+
+  <div class="code-block"><pre>&lt;?php
+// =============================================
+// 1. CONNECTION WITH MySQLi
+// =============================================
+$host     = "localhost";
+$username = "root";
+$password = "";
+$database = "college_db";
+
+// Object-oriented style
+$conn = new mysqli($host, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully!";
+
+// Procedural style (alternative)
+$conn = mysqli_connect($host, $username, $password, $database);
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// =============================================
+// 2. CREATE TABLE
+// =============================================
+$sql = "CREATE TABLE IF NOT EXISTS students (
+    id       INT AUTO_INCREMENT PRIMARY KEY,
+    name     VARCHAR(100) NOT NULL,
+    email    VARCHAR(150) UNIQUE,
+    branch   VARCHAR(50),
+    marks    FLOAT,
+    created  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)";
+$conn->query($sql);
+
+// =============================================
+// 3. INSERT (CREATE)
+// =============================================
+$name   = "Alice";
+$email  = "alice@example.com";
+$branch = "BCA";
+$marks  = 85.5;
+
+$sql = "INSERT INTO students (name, email, branch, marks)
+        VALUES ('$name', '$email', '$branch', $marks)";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Record inserted! ID: " . $conn->insert_id;
+}
+
+// =============================================
+// 4. SELECT (READ)
+// =============================================
+// Basic SELECT
+$result = $conn->query("SELECT * FROM students");
+while ($row = $result->fetch_assoc()) {
+    echo $row['name'] . " - " . $row['marks'] . "\n";
+}
+
+// With ORDER BY and ALIAS
+$sql = "SELECT name, marks, branch AS dept 
+        FROM students 
+        WHERE marks > 60 
+        ORDER BY marks DESC";
+$result = $conn->query($sql);
+$count  = $result->num_rows;
+echo "Found $count students";
+
+// =============================================
+// 5. UPDATE
+// =============================================
+$sql = "UPDATE students SET marks = 90 WHERE name = 'Alice'";
+if ($conn->query($sql)) {
+    echo "Updated rows: " . $conn->affected_rows;
+}
+
+// =============================================
+// 6. DELETE
+// =============================================
+$sql = "DELETE FROM students WHERE id = 5";
+$conn->query($sql);
+
+// =============================================
+// 7. TRUNCATE (Remove all rows, keep structure)
+// =============================================
+$conn->query("TRUNCATE TABLE students");
+
+// =============================================
+// 8. PREPARED STATEMENTS (Prevent SQL Injection)
+// =============================================
+$stmt = $conn->prepare("INSERT INTO students (name, email, marks) VALUES (?, ?, ?)");
+$stmt->bind_param("ssd", $name, $email, $marks);  // s=string, d=double
+$name  = "Bob";
+$email = "bob@example.com";
+$marks = 78.0;
+$stmt->execute();
+echo "Inserted ID: " . $stmt->insert_id;
+$stmt->close();
+
+// Prepared SELECT
+$stmt = $conn->prepare("SELECT * FROM students WHERE branch = ?");
+$stmt->bind_param("s", $branch);
+$branch = "BCA";
+$stmt->execute();
+$result = $stmt->get_result();
+while ($row = $result->fetch_assoc()) {
+    echo $row['name'] . "\n";
+}
+$stmt->close();
+
+// =============================================
+// 9. CLOSE CONNECTION
+// =============================================
+$conn->close();
+
+// =============================================
+// 10. PDO CONNECTION (Database-agnostic)
+// =============================================
+try {
+    $pdo = new PDO("mysql:host=localhost;dbname=college_db", "root", "");
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    // PDO prepared statement
+    $stmt = $pdo->prepare("SELECT * FROM students WHERE marks > :minMarks");
+    $stmt->execute(['minMarks' => 70]);
+    $students = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+    foreach ($students as $s) {
+        echo $s['name'] . "\n";
+    }
+} catch (PDOException $e) {
+    echo "PDO Error: " . $e->getMessage();
+}
+?&gt;</pre></div>
+
+  <h3>SQL Commands in PHP Context</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>SQL Command</th><th>Purpose</th><th>PHP Example</th></tr></thead>
+      <tbody>
+        <tr><td>SELECT</td><td>Read/fetch data</td><td><code>$conn->query("SELECT * FROM t")</code></td></tr>
+        <tr><td>INSERT</td><td>Add new row</td><td><code>$conn->query("INSERT INTO t ...")</code></td></tr>
+        <tr><td>UPDATE</td><td>Modify existing rows</td><td><code>$conn->query("UPDATE t SET ...")</code></td></tr>
+        <tr><td>DELETE</td><td>Remove rows</td><td><code>$conn->query("DELETE FROM t WHERE ...")</code></td></tr>
+        <tr><td>TRUNCATE</td><td>Remove ALL rows, keep table</td><td><code>$conn->query("TRUNCATE TABLE t")</code></td></tr>
+        <tr><td>ORDER BY</td><td>Sort results</td><td><code>SELECT * FROM t ORDER BY col DESC</code></td></tr>
+        <tr><td>ALIAS (AS)</td><td>Rename column/table in result</td><td><code>SELECT name AS student_name</code></td></tr>
+        <tr><td>WHERE</td><td>Filter rows</td><td><code>WHERE marks > 60 AND branch = 'BCA'</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip-box">💡 <strong>Security:</strong> Always use <strong>prepared statements</strong> with <code>bind_param()</code> or PDO to prevent SQL injection attacks. Never directly embed user input into SQL queries.</div>
+</section>
+
+<section id="u4-exam" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Unit IV — Exam</span>
+    <h2>Unit IV — Exam Questions & Answers</h2>
+  </div>
+
+  <div class="exam-section">
+    <h3>2-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q1. What is the purpose of the finally block?</div>
+      <div class="answer">The <code>finally</code> block always executes regardless of whether an exception was thrown or caught. It is used for cleanup code like closing database connections or files.</div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q2. Difference between fopen() modes 'w' and 'a'?</div>
+      <div class="answer"><code>'w'</code> (write) truncates the file to zero length before writing — existing content is lost. <code>'a'</code> (append) opens at end of file — existing content is preserved, new data added at end.</div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q3. What is a prepared statement?</div>
+      <div class="answer">A prepared statement is a pre-compiled SQL template. Parameters are bound separately using <code>bind_param()</code>, preventing SQL injection. More efficient for repeated queries.</div>
+    </div>
+
+    <h3>5-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q4. Explain exception handling with try-catch-finally in PHP.</div>
+      <div class="answer">
+        <strong>try:</strong> Contains code that might throw an exception<br>
+        <strong>throw:</strong> Manually throws an exception object<br>
+        <strong>catch:</strong> Catches and handles specific exception type<br>
+        <strong>finally:</strong> Always runs (cleanup)<br><br>
+        Multiple catch blocks handle different exception types. Custom exceptions extend the Exception class. Key methods: getMessage(), getCode(), getLine(), getFile(), getTrace().
+      </div>
+    </div>
+    <div class="qa-item">
+      <div class="question">Q5. List and explain PHP file handling functions.</div>
+      <div class="answer">
+        <strong>fopen():</strong> Open file, return handle<br>
+        <strong>fclose():</strong> Close file handle<br>
+        <strong>fread():</strong> Read n bytes from file<br>
+        <strong>fwrite():</strong> Write string to file<br>
+        <strong>fgets():</strong> Read one line<br>
+        <strong>feof():</strong> Check end of file<br>
+        <strong>file_get_contents():</strong> Read entire file to string<br>
+        <strong>file_put_contents():</strong> Write string to file (simpler)<br>
+        <strong>copy():</strong> Copy file<br>
+        <strong>rename():</strong> Rename/move file<br>
+        <strong>unlink():</strong> Delete file
+      </div>
+    </div>
+
+    <h3>10-Mark Questions</h3>
+    <div class="qa-item">
+      <div class="question">Q6. Explain MySQL database connectivity with PHP. Perform Insert, Select, Update, Delete operations.</div>
+      <div class="answer">
+        <strong>Step 1 — Connect:</strong><br>
+        <code>$conn = new mysqli("localhost", "root", "", "db_name");</code><br>
+        Check: <code>if($conn->connect_error) die(...);</code><br><br>
+        <strong>Step 2 — INSERT:</strong><br>
+        <code>$conn->query("INSERT INTO students (name,marks) VALUES ('Alice',85)");</code><br>
+        Get new ID: <code>$conn->insert_id</code><br><br>
+        <strong>Step 3 — SELECT:</strong><br>
+        <code>$result = $conn->query("SELECT * FROM students ORDER BY marks DESC");</code><br>
+        Loop: <code>while($row = $result->fetch_assoc()) { echo $row['name']; }</code><br><br>
+        <strong>Step 4 — UPDATE:</strong><br>
+        <code>$conn->query("UPDATE students SET marks=90 WHERE name='Alice'");</code><br><br>
+        <strong>Step 5 — DELETE:</strong><br>
+        <code>$conn->query("DELETE FROM students WHERE id=5");</code><br><br>
+        <strong>Step 6 — Close:</strong><br>
+        <code>$conn->close();</code><br><br>
+        Always use prepared statements for user input to prevent SQL injection.
+      </div>
+    </div>
+
+    <h3>Key Points for Exam</h3>
+    <div class="keypoints-box">
+      <ul>
+        <li>Exception = recoverable problem; Error = usually fatal</li>
+        <li>throw must throw an Exception object or its subclass</li>
+        <li>Multiple catch blocks: specific exceptions before generic Exception</li>
+        <li>finally: always executes, even after return in try/catch</li>
+        <li>Custom exceptions: extend Exception class</li>
+        <li>File modes: r=read, w=write(truncate), a=append, x=create-exclusive</li>
+        <li>file_get_contents / file_put_contents: simplest file I/O</li>
+        <li>unlink() = delete file; rename() = rename or move</li>
+        <li>MySQLi: <code>new mysqli(host, user, pass, db)</code></li>
+        <li>PDO: <code>new PDO("mysql:host=...;dbname=...", user, pass)</code></li>
+        <li>Prepared statements use ? (MySQLi) or :name (PDO) placeholders</li>
+        <li>TRUNCATE removes all rows but keeps table structure</li>
+        <li>insert_id = auto-generated ID of last inserted row</li>
+        <li>affected_rows = number of rows affected by UPDATE/DELETE</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GLOSSARY ===================== -->
+<section id="glossary" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Reference</span>
+    <h2>Glossary of Terms</h2>
+  </div>
+  <div class="glossary-grid">
+    <div class="glossary-item"><dt>PHP</dt><dd>Hypertext Preprocessor — server-side scripting language for web development</dd></div>
+    <div class="glossary-item"><dt>Apache</dt><dd>Open-source web server software widely used with PHP</dd></div>
+    <div class="glossary-item"><dt>IIS</dt><dd>Internet Information Services — Microsoft's web server for Windows</dd></div>
+    <div class="glossary-item"><dt>XAMPP</dt><dd>Cross-platform package: Apache, MySQL, PHP, Perl for local development</dd></div>
+    <div class="glossary-item"><dt>php.ini</dt><dd>PHP configuration file controlling error reporting, extensions, file uploads, etc.</dd></div>
+    <div class="glossary-item"><dt>Variable</dt><dd>Named memory location starting with $; case-sensitive in PHP</dd></div>
+    <div class="glossary-item"><dt>Type Juggling</dt><dd>PHP's automatic type conversion during operations</dd></div>
+    <div class="glossary-item"><dt>Static Variable</dt><dd>Local variable retaining value between function calls; initialized once</dd></div>
+    <div class="glossary-item"><dt>Superglobal</dt><dd>Variables available everywhere without global keyword: $_GET, $_POST, $_SESSION, $_COOKIE, $_SERVER</dd></div>
+    <div class="glossary-item"><dt>Heredoc</dt><dd>Multi-line string syntax with variable interpolation using &lt;&lt;&lt;EOT</dd></div>
+    <div class="glossary-item"><dt>Nowdoc</dt><dd>Multi-line string syntax WITHOUT interpolation, like single quotes</dd></div>
+    <div class="glossary-item"><dt>PCRE</dt><dd>Perl Compatible Regular Expressions — regex engine used by PHP</dd></div>
+    <div class="glossary-item"><dt>Closure</dt><dd>Anonymous function that can capture variables from outer scope</dd></div>
+    <div class="glossary-item"><dt>Cookie</dt><dd>Small data file stored in browser; sent with every HTTP request</dd></div>
+    <div class="glossary-item"><dt>Session</dt><dd>Server-side mechanism to persist user data across multiple page requests</dd></div>
+    <div class="glossary-item"><dt>Exception</dt><dd>Recoverable error condition that can be caught and handled with try-catch</dd></div>
+    <div class="glossary-item"><dt>PDO</dt><dd>PHP Data Objects — database-agnostic abstraction layer</dd></div>
+    <div class="glossary-item"><dt>MySQLi</dt><dd>MySQL Improved — PHP extension for connecting to MySQL databases</dd></div>
+    <div class="glossary-item"><dt>Prepared Statement</dt><dd>Pre-compiled SQL query with placeholders — prevents SQL injection</dd></div>
+    <div class="glossary-item"><dt>SQL Injection</dt><dd>Attack where malicious SQL is inserted into a query through user input</dd></div>
+    <div class="glossary-item"><dt>XSS</dt><dd>Cross-Site Scripting — attack injecting malicious scripts via user input; prevented by htmlspecialchars()</dd></div>
+    <div class="glossary-item"><dt>CRUD</dt><dd>Create, Read, Update, Delete — the four basic database operations</dd></div>
+    <div class="glossary-item"><dt>Zend Engine</dt><dd>Core PHP interpreter that parses and executes PHP code</dd></div>
+    <div class="glossary-item"><dt>resource</dt><dd>PHP data type representing a reference to external resource (file, DB connection)</dd></div>
+  </div>
+</section>
+
+<!-- ===================== FORMULA SHEET ===================== -->
+<section id="formula-sheet" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">Reference</span>
+    <h2>PHP Quick-Reference Formula Sheet</h2>
+  </div>
+
+  <h3>📌 Essential Syntax</h3>
+  <div class="code-block"><pre>// Variable            $varName = value;
+// Echo                echo "text", $var;
+// Concatenation       $str1 . $str2
+// String interpolate  "Hello $name" or "Hello {$name}"
+// Ternary             $x = cond ? val1 : val2;
+// Null coalesce       $x = $a ?? $default;
+// Type cast           (int)$x  (float)$x  (string)$x  (bool)$x
+// Strict compare      $a === $b   $a !== $b
+// Reference param     function f(&$x)  — modifies original
+// Spread operator     function f(...$args)  — variadic</pre></div>
+
+  <h3>📌 String Functions Cheatsheet</h3>
+  <div class="code-block"><pre>strlen($s)          // Length
+strtoupper/lower    // Case
+trim($s)            // Strip whitespace
+str_replace($f,$r)  // Replace
+strpos($s,$n)       // Find position (false if not found)
+substr($s,$start,$len) // Extract
+explode($delim,$s)  // String → Array
+implode($delim,$a)  // Array → String
+preg_match(/re/,$s) // Regex match
+preg_replace(/re/,$r,$s) // Regex replace
+htmlspecialchars($s) // XSS protection
+sprintf("%05.2f",$n) // Formatted string</pre></div>
+
+  <h3>📌 Array Functions Cheatsheet</h3>
+  <div class="code-block"><pre>count($a)           // Number of elements
+array_push($a,$v)   // Append
+array_pop($a)       // Remove last
+array_shift($a)     // Remove first
+array_unshift($a,$v) // Prepend
+in_array($v,$a)     // Check existence
+array_search($v,$a) // Get key of value
+array_merge($a,$b)  // Merge arrays
+sort($a)            // Sort values (reindex)
+ksort($a)           // Sort by key
+array_map(fn,$a)    // Apply function to all
+array_filter($a,fn) // Filter by callback
+array_keys($a)      // Get all keys
+array_values($a)    // Get all values</pre></div>
+
+  <h3>📌 Database Connectivity Pattern</h3>
+  <div class="code-block"><pre>$conn = new mysqli("localhost","root","","db");
+if ($conn->connect_error) die($conn->connect_error);
+
+// CRUD
+$conn->query("SELECT/INSERT/UPDATE/DELETE ...");
+$result = $conn->query("SELECT * FROM t");
+while ($row = $result->fetch_assoc()) { }
+
+// Prepared (safe)
+$stmt = $conn->prepare("INSERT INTO t (a,b) VALUES (?,?)");
+$stmt->bind_param("si", $strVal, $intVal);
+$stmt->execute();
+$conn->close();</pre></div>
+
+  <h3>📌 File Handling Pattern</h3>
+  <div class="code-block"><pre>// Simple read
+$content = file_get_contents("file.txt");
+
+// Simple write
+file_put_contents("file.txt", $data);
+file_put_contents("file.txt", $data, FILE_APPEND);
+
+// Full control
+$h = fopen("file.txt", "r");
+while (!feof($h)) { $line = fgets($h); }
+fclose($h);
+
+// Management
+copy($src, $dst);   // Copy
+rename($old, $new); // Rename/move
+unlink($file);      // Delete</pre></div>
+
+  <h3>📌 Error Handling Pattern</h3>
+  <div class="code-block"><pre>try {
+    if (errorCondition) {
+        throw new Exception("Message", $code);
+    }
+    // normal code
+} catch (SpecificException $e) {
+    echo $e->getMessage();
+} catch (Exception $e) {
+    echo $e->getMessage();
+    // $e->getCode(), getFile(), getLine(), getTrace()
+} finally {
+    // always runs — cleanup
+}</pre></div>
+</section>
+
+<!-- ===================== CRASH REVISION ===================== -->
+<section id="crash-revision" class="content-section">
+  <div class="unit-header">
+    <span class="unit-badge">⚡ Exam Prep</span>
+    <h2>Final Exam Crash Revision</h2>
+    <p class="unit-desc">This is your last-minute revision guide. Read through all points once before your exam.</p>
+  </div>
+
+  <div class="crash-grid">
+    <div class="crash-card">
+      <h4>🔑 Unit I — Must Know</h4>
+      <ul>
+        <li>PHP = server-side; browser gets HTML only</li>
+        <li>Created by Rasmus Lerdorf, 1994</li>
+        <li>Opening tag: <code>&lt;?php</code> … <code>?&gt;</code></li>
+        <li>Standard tag always works; short tag needs config</li>
+        <li>XAMPP: Apache + MySQL + PHP + Perl</li>
+        <li>Config file = <code>php.ini</code></li>
+        <li>Must serve via web server, not file://</li>
+        <li><code>phpinfo()</code> = view all PHP settings</li>
+      </ul>
+    </div>
+    <div class="crash-card">
+      <h4>🔑 Unit II — Must Know</h4>
+      <ul>
+        <li>PHP = loosely typed (dynamic typing)</li>
+        <li>8 types: int, float, bool, string, array, object, null, resource</li>
+        <li><code>===</code> checks value AND type (strict)</li>
+        <li>static var: retains value between calls</li>
+        <li>global keyword: access global var in function</li>
+        <li>do-while: always executes body at least once</li>
+        <li>foreach: <code>foreach($arr as $k => $v)</code></li>
+        <li>break=exit loop; continue=skip iteration</li>
+        <li>Ternary: <code>cond ? val1 : val2</code></li>
+        <li>Null coalesce: <code>$a ?? "default"</code></li>
+      </ul>
+    </div>
+    <div class="crash-card">
+      <h4>🔑 Unit III — Must Know</h4>
+      <ul>
+        <li>Double quotes interpolate variables; single don't</li>
+        <li>Heredoc: interpolates; Nowdoc: doesn't</li>
+        <li>strpos: first occurrence; strrpos: last</li>
+        <li>explode=string→array; implode=array→string</li>
+        <li>PHP regex uses PCRE via preg_* functions</li>
+        <li>By reference: <code>&$var</code> modifies original</li>
+        <li>$_GET: URL; $_POST: body; $_REQUEST: both+cookie</li>
+        <li>session_start() BEFORE any output</li>
+        <li>Cookies stored in browser; sessions on server</li>
+        <li>Use htmlspecialchars() to prevent XSS</li>
+      </ul>
+    </div>
+    <div class="crash-card">
+      <h4>🔑 Unit IV — Must Know</h4>
+      <ul>
+        <li>Exception: catchable; Error: usually fatal</li>
+        <li>try→throw→catch→finally</li>
+        <li>finally: always runs (for cleanup)</li>
+        <li>Custom exception: extend Exception class</li>
+        <li>File modes: r, w(truncate), a(append), x(create-only)</li>
+        <li>fopen, fread, fwrite, fclose</li>
+        <li>Simpler: file_get/put_contents</li>
+        <li>unlink=delete; rename=rename; copy=copy</li>
+        <li>MySQLi: <code>new mysqli(host,user,pass,db)</code></li>
+        <li>Prepared statements prevent SQL injection</li>
+        <li>TRUNCATE: removes all rows, keeps structure</li>
+        <li>insert_id: last auto-increment ID</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>🧠 Memory Tricks</h3>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead><tr><th>Topic</th><th>Mnemonic / Trick</th></tr></thead>
+      <tbody>
+        <tr><td>PHP tag</td><td>&lt;?php is "PHP Question mark" — always ask PHP to process</td></tr>
+        <tr><td>Loop choice</td><td>Known count → <strong>for</strong>; Array → <strong>foreach</strong>; Unknown end → <strong>while</strong>; At least once → <strong>do-while</strong></td></tr>
+        <tr><td>Array types</td><td><strong>N</strong>umeric = <strong>N</strong>umbers as keys; <strong>A</strong>ssociative = <strong>A</strong>lphanumeric keys; <strong>M</strong>ulti = <strong>M</strong>atrix of arrays</td></tr>
+        <tr><td>GET vs POST</td><td>GET = <strong>G</strong>et data (visible in URL); POST = <strong>P</strong>rivate/hidden data</td></tr>
+        <tr><td>Cookie vs Session</td><td>Cookie = Client stores; Session = Server stores</td></tr>
+        <tr><td>file modes r/w/a</td><td><strong>R</strong>ead = Just look; <strong>W</strong>rite = Wipe and write; <strong>A</strong>ppend = Add at end</td></tr>
+        <tr><td>try-catch</td><td><strong>T</strong>ry it; <strong>C</strong>atch the problem; <strong>F</strong>inally fix up</td></tr>
+        <tr><td>CRUD</td><td><strong>C</strong>reate=INSERT <strong>R</strong>ead=SELECT <strong>U</strong>pdate=UPDATE <strong>D</strong>elete=DELETE</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>⚠️ Common Mistakes Students Make</h3>
+  <div class="warning-box">
+    <ol>
+      <li><strong>Opening PHP file as file://</strong> instead of http://localhost — PHP won't execute</li>
+      <li><strong>Forgetting semicolons</strong> at end of PHP statements</li>
+      <li><strong>Using == instead of ===</strong> when type matters</li>
+      <li><strong>Calling session_start() after HTML output</strong> — causes header error</li>
+      <li><strong>Not closing fopen() handles</strong> — causes file locks</li>
+      <li><strong>Embedding user input directly in SQL</strong> — SQL injection vulnerability</li>
+      <li><strong>Forgetting break in switch</strong> — causes fall-through to next case</li>
+      <li><strong>Using 'w' mode when you mean 'a'</strong> — 'w' truncates/erases file!</li>
+      <li><strong>Confusing strpos() returning 0 with false</strong> — use === false, not == false</li>
+      <li><strong>Forgetting & in pass-by-reference</strong> — function will NOT modify original</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
